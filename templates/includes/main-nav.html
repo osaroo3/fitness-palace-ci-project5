@@ -17,21 +17,19 @@
                 Clothing
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">A</a>
-                <a href="" class="dropdown-item">B</a>
-                <a href="" class="dropdown-item">C</a>
-                <a href="" class="dropdown-item">All </a>
+                <a href="{% url 'products' %}?category=fitness_product" class="dropdown-item">Fitness Product</a>
+                <a href="" class="dropdown-item"></a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Homeware
+                Nutrition
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">A</a>
-                <a href="" class="dropdown-item">B</a>
-                <a href="" class="dropdown-item">All </a>
+            <div class="dropdown-menu border-0" aria-labelledby="nutrition-link">
+                <a href="{% url 'products' %}?category=nutrition_product" class="dropdown-item">Nutrition Product</a>
+                <a href="" class="dropdown-item"></a>
+                <a href="" class="dropdown-item"></a>
             </div>
         </li>
 
@@ -40,10 +38,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">A</a>
-                <a href="" class="dropdown-item">B</a>
-                <a href="" class="dropdown-item">C</a>
+                <a href="" class="dropdown-item"></a>
+                <a href="" class="dropdown-item"></a>
+                <a href="" class="dropdown-item"></a>
+                <a href="" class="dropdown-item"></a>
             </div>
         </li>
     </ul>
