@@ -28,7 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-osaroo3-fitnesspalaceci-fwddorzlr03.ws.codeinstitute-ide.net']
 
-APPEND_SLASH=False
 # Application definition
 
 INSTALLED_APPS = [
@@ -78,6 +77,8 @@ TEMPLATES = [
         },
     },
 ]
+
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = [
     
