@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['8000-osaroo3-fitnesspalaceci-fwddorzlr03.ws.codeinstitute-ide.net']
 
-
+APPEND_SLASH=False
 # Application definition
 
 INSTALLED_APPS = [
