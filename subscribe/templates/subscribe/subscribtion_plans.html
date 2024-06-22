@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Plans</h2>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="table-responsive rounded">
+                <table class="table table-sm table-borderless">
+                    <thead class="text-black">
+                        <tr>
+                            <th scope="col text-uppercase">Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Duration</th>
+                            <th scope="col">Description</th>                            
+                        </tr>
+                    </thead>
+                    {% for p in plans %}
+                    <tr>
+                        <td class="py-3">
+                            <p class="my-0">{{ p.name }}</p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">£{{p.price }}</p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">{{p.duration }}</p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">{{p.description }}</p>
+                        </td>
+                        <td class="py-3">
+                            <a href="" class="my-0">Subscribe</a>
+                        </td>                                                                         
+            {% endfor%}
+        </div>
+    </div>
+
+{% endblock %}
