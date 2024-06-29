@@ -21,7 +21,17 @@ def view_sub_checkout(request, p_id):
         currency=settings.STRIPE_CURRENCY,
     )
 
-    print(intent)
+    if request.method == 'POST':
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            form = form.save(commit=False)
+            form.save()
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                'Your subscription was successfull.')
+            return redirect('home')  
+
     order_form = OrderForm()
 
     if not stripe_public_key:
@@ -33,5 +43,27 @@ def view_sub_checkout(request, p_id):
         'order_form': order_form,
         'stripe_public_key': stripe_public_key,
         'client_secret': intent.client_secret,        
+    }
+    return render(request, 'sub_checkout/sub_checkout.html', context)
+
+
+def add_subscription(request):
+    if request.method == 'POST':
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            form = form.save(commit=False)
+            form.save()
+            messages.add_message(
+                request,
+                messages.SUCCESS,
+                'Your subscription was successfull.')
+            return redirect('home')
+        else:
+            messages.error(request, "Please enter correct data")
+
+    else:
+        form = BookingForm()
+    context = {
+        form:form,
     }
     return render(request, 'sub_checkout/sub_checkout.html', context)

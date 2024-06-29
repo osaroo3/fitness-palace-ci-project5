@@ -5,7 +5,8 @@ from sub_checkout.models import Order
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
-        fields = ('plan', 'full_name', 'email', 'phone_number',)
+        fields = ('plan', 'full_name', 'email', 'phone_number','order_total')
+    
 
     def __init__(self, *args, **kwargs):
         """
@@ -18,6 +19,7 @@ class OrderForm(forms.ModelForm):
             'full_name': 'Full Name',
             'email': 'Email Address',
             'phone_number': 'Phone Number',
+            'order_total':'order_total',
         }
 
         self.fields['plan'].widget.attrs['autofocus'] = True
