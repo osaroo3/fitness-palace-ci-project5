@@ -9,6 +9,7 @@ class OrderAdmin(admin.ModelAdmin):
         'full_name',
         'date',
         'order_total',
+        'stripe_pid'
     )
 
     ordering = ('plan',)

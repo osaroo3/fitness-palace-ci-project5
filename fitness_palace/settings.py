@@ -192,4 +192,5 @@ STRIPE_CURRENCY = 'gbp'
 STRIPE_SECRET_KEY = os.environ.get("STRIPE_SECRET_KEY")
 STRIPE_PUBLIC_KEY = os.environ.get("STRIPE_PUBLIC_KEY")
 STRIPE_WH_SECRET = os.environ.get("STRIPE_WH_SECRET")
+STRIPE_WH_SECRET_B = os.environ.get("STRIPE_WH_SECRET_B")
 DEFAULT_FROM_EMAIL = 'fitnesspalace@example.com'

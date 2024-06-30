@@ -1,0 +1,1 @@
+Fitness Palace Confirmation for subscription Number {{ order.order_number }}
