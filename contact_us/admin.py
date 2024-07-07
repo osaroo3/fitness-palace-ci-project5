@@ -6,7 +6,7 @@ from .models import Contact
 class ContactAdmin(admin.ModelAdmin):
     """ View info from contact form in backend """
     list_display = (
-        'user',
+        'fullname',
         'email',
         'title',
         'message',

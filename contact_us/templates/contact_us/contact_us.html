@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col text-center mt-3">
+            <h2 class="logo-font">Contact Us</h2>
+            <hr class="w-50 mb-1">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-lg-6">
+            <p class="text-muted">Please fill out the form below</p>
+            <form method="POST" action="{% url 'contact_us' %}" name="form" method="POST">
+                    
+                {{ form | crispy }} 
+                {% csrf_token %}
+
+                 <button class="btn btn-success" type="submit">Submit</button>
+                
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+{% endblock %}
