@@ -136,10 +136,14 @@
                     {% if user.is_authenticated and review.author == user %}
                     <small class="ml-3">
                         <a href="{% url 'edit_review' review.id %}">Edit Review</a> | 
-                        <a class="text-danger" href="">Delete Review</a>
+                        <a class="text-danger" href="{% url 'delete_review' review.id %}">Delete Review</a>
                     </small>                                       
                     {% endif %}
                 </div>
+                {% empty %}
+                <div>
+                   <p class="pt-2">You have made no reviews yet.</p>
+                </div>                
                 
                 {% endfor %}
             </div>
