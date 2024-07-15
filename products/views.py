@@ -152,3 +152,30 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
+
+@login_required
+def edit_review(request, review_id):
+    """ Edit a review """
+    reviews = Review.objects.all()
+    review = get_object_or_404(Review, pk=review_id)
+    if request.method == 'POST':
+        form = ReviewForm(request.POST, instance=review)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated review!')
+            
+        else:
+            messages.error(request, 'Failed to update review. Please ensure the form is valid.')
+    
+    form = ReviewForm(instance=review)
+        
+
+    template = 'products/edit_review.html'
+    context = { 
+        'form': form,
+        'review': review,
+        'reviews': reviews,
+    }
+
+    return render(request, template, context)

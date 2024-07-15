@@ -266,6 +266,9 @@ a.category-badge > span.badge:hover {
 
 
 /* Review */
+#ReviewForm {
+    margin-top: 1.3em;
+}
 .faded {
     color: rgb(172, 175, 175);
 }
@@ -278,6 +281,11 @@ a.category-badge > span.badge:hover {
 .btn-edit {
     background-color: #188181;
     color: #fff;
+}
+
+.btn-delete {
+    color: #fff;
+    background: #E84610;
 }
 
 .btn-signup:hover,
