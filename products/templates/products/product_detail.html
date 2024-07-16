@@ -36,7 +36,9 @@
                         <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                     </a>
                 </p>
+
                 {% endif %}
+                <small><a href="{% url 'all_reviews' product.id %}"><i class="fas fa-comment mr-1 "></i>Reviews</a></small><br>
                 {% if product.rating %}
                 <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
                 {% else %}
@@ -115,6 +117,7 @@
             <div class="card-body">
                 
                 {% for review in reviews %}
+
                 <div class="p-2 reviews
                     {% if not review.approved and review.author == user %}
                     faded{% elif not review.approved %} d-none{% endif %}">
@@ -165,6 +168,7 @@
                 {% endif %}
             </div>
         </div>
+
     </div> 
 </div>
 {% endblock %}

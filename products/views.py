@@ -189,3 +189,17 @@ def delete_review(request, review_id):
     messages.success(request, 'review deleted succesfully!')
 
     return redirect('products')
+
+def all_reviews(request, product_id):
+    """ A view to show individual product details """
+
+    product = get_object_or_404(Product, pk=product_id)
+    reviews = product.reviews.all().order_by("-created_on")
+
+
+    context = {
+        'product': product,
+        'reviews': reviews,
+    }
+
+    return render(request, 'products/all_reviews.html', context)
