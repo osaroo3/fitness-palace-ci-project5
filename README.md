@@ -1,114 +1,541 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Portfolio Project 5 -  Fitness Palace
+![]()
 
-Welcome Arukwe Obo-Eba,
+The deployed [Fitness Palace]() app.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The [GitHub repository](https://github.com/osaroo3/fitness-palace-ci-project5) 
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 28, 2024**
+## Project goals
 
-## Gitpod Reminders
+The goal of this project is to build a fitness subscription application with features such as user's ability to join a fitness community and purchase exercise plans and merchandise. Also, for site owner to be able to build an active community around the product based on subscription and individual payments model, sell exercise and nutrition plans, nutrition and exercise products.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Marketing strategy
 
-`python3 -m http.server`
+# Table of content
 
-A blue button should appear to click: _Make Public_,
+- [**UX (User Experience)**](#ux-user-experience)
+  - [**User Stories**](#user-stories)
+- [**Design and Site Structure**](#design-structure)
+  - [**Functional Structure**](#functional-structure)
+  - [**Wireframes**](#wireframes)
+- [**Features**](#features)
+  - [**Responsive Design**](#responsive-design)
+- [**Technologies**](#technologies)
+  - [**Languages**](#languages)
+  - [**Frameworks and Libraries**](#frameworks)
+  - [**Tools**](#tools)
+- [**Testing**](#testing)
+- [**Deployment**](#deployment)
+- [**Credits**](#credits)
+  - [**Code**](#code)
+  - [**Content and media**](#content)
+  - [**Acknowledgments**](#acknowledgments)
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
 
-A blue button should appear to click: _Make Public_,
+## UX (User Experience)
 
-Another blue button should appear to click: _Open Browser_.
+### User stories
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+#### First time visitor goals
 
-To log into the Heroku toolbelt CLI:
+As a first time visitor, I want:
+* to know the purpose of the site at first glance.
+* to navigate the site intuitively.
+* to have access to all features of the site after registering an account.
+* to be able to make subscribe to available plans.
+* to be able to sign out of my user account.
+* to contact the facility managers
+       
+        
+#### Returning and frequent user goals
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+As a returning user, I want:
+* to access my user account by signing in.
+* to make and view my subscriptions. 
+* to be able to sign out of my account as a safety measure.
+* view my profile and orders
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
 
-------
+#### Site Administrator/ Facility management goals
+* Build an active community based on subscription
+* As a site administrator, I want to create, read, update and delete products. 
+* Receive messages from our site users via contact us page.   
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+### Agile tools
 
-**May 28 2024:** Fix Mongo and Links installs
+GitHub Projects feature was used as a [Kanban board]() for the development of this project, which made is easy to track the progress made and goals attained.
+[User stories]() was used to structure the project into sections of tasks to be achieved, with the kenban board providing the platform. 
 
-**April 26 2024:** Update node version to 16
+<!-- # 
+## Design and Site structure
 
-**September 20 2023:** Update Python version to 3.9.17.
+The site mirrors what an african eatery would look like in the United Kingdom or Europe to give diaspora africans a taste of home.
+The main page is as viewed below.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<details>
+<summary>Africana website look at first glance</summary>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+![Home page](staticfiles/images/readme-images/home-page2.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+</details>
+<br />
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### Functional Structure
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+**Home page:** The home page has navigation bar features and also some images of the varieties of the african dishes available to users.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+**Menu page:** For access to the menu to make reservations, the user must have an account and sign in.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+**My bookings page:** A logged in user has access to all bookings/reservations made. The user can manage bookings by either modifying them or deleting them if they want to.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+**Book now page:** A logged in user has full access to the book now page features and can make bookings if they wish to.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+**Registration page:** The registration page is where the user can register an account and get access to all available features of the site
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+**Login page:** The login page offers a user with a user account access to all the features of the site when they log in with their login details.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+**Edit booking page:** The feature is only available to registered users who wish to modify their bookings.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Wireframes
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+The wireframes used are shown below although modified in the project work:
 
-------
+**Models**
 
-## FAQ about the uptime script
+<details>
+<summary>Menu model</summary>
 
-**Why have you added this script?**
+![Menu model](staticfiles/images/wireframes/menu-model.png)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+</details>
 
-**How will this affect me?**
+<details>
+<summary>Booking model</summary>
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+![Booking model](staticfiles/images/wireframes/booking-model.png)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+</details>
+</br>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+**For Mobile view and small screens**
 
-**So….?**
+<details>
+<summary>Book now page</summary>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Book now page](staticfiles/images/wireframes/book-now.png)
 
-**Can I opt out?**
+</details>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<details>
+<summary>Home page</summary>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![Home page](staticfiles/images/wireframes/home.png)
 
-**Anything more?**
+</details>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+<details>
+<summary>Menu page</summary>
+
+![Menu page](staticfiles/images/wireframes/menu.png)
+
+</details>
+
+<details>
+<summary>My bookings page</summary>
+
+![My bookings page](staticfiles/images/wireframes/mybooking.png)
+
+</details>
+
+
+<br />
+
+**For Desktop view**
+<details>
+<summary>Home page</summary>
+
+![Home page](staticfiles/images/wireframes/homepage.png)
+
+</details>
+
+<details>
+<summary>Menu page</summary>
+
+![Menu page](staticfiles/images/wireframes/ourmenu.png)
+
+</details>
+
+<details>
+<summary>My bookings page</summary>
+
+![My bookings page](staticfiles/images/wireframes/my-booking.png)
+
+</details>
+
+<details>
+<summary>Book now page</summary>
+
+![Book now page](staticfiles/images/wireframes/booknow.png)
+
+</details>
+<br />
+
+
+## Features
+
+### Navbar
+
+Due to the base extension, the navigation bar is present on all pages of the site. If the user is logged in, the right end of the navbar changes from "Welcome, AnonymousUser to welcome, John(depending on the name of the user)". The navbar also collapses into a hamburger icon for smaller screen sizes.
+
+Navigation bar for user's without an account.
+
+![Navigation bar for unauthorised user's](staticfiles/images/readme-images/nav-bar2.png)
+
+Navigation bar for logged in users.
+![Authenticated user's Navigation](staticfiles/images/readme-images/nav-bar1.png)
+
+### Home page
+
+On the Home page, unauthorised users cannot see my bookings and book now links on the nav bar . 
+![Home page](staticfiles/images/readme-images/home-page.png)
+
+### Sign up page
+
+This page allows unauthorised users to create an account by following the instructions.
+![Sign up page](staticfiles/images/readme-images/sign-up.png)
+
+
+### Login page
+
+This page allows user's with account to login by providing their credentials.
+
+![Sign in page](staticfiles/images/readme-images/sign-in.png)
+
+
+### Menu page
+
+The menu button on the navbar when clicked, takes the user to the menu page which provides users with available menu and the corresponding price to choose from.
+![Menu page](staticfiles/images/readme-images/menu-page.png)
+
+
+### Book now page
+
+The Book now nav link when clicked, takes the user to the book now page. For logged in user's, a table to fill to make bookings shows up.
+
+#### Book Now page for a logged in user
+
+![Book Now page](staticfiles/images/readme-images/book-now-page.png)
+
+### My Bookings page
+
+The my bookings page displays bookings made by the logged in user, with details about the bookings.If there is no booking yet, the logged in user is told with a further suggestion to make bookings with a provided link to the page to make bookings.
+
+![Booking page](staticfiles/images/readme-images/my-bookings-page.png)
+
+
+### Edit booking page
+
+Every bookings made by a logged in user can be modified by either editing the bookings or deleting them. The modify and delete button exist on my bookings page.
+
+![Edit booking page](staticfiles/images/readme-images/edit-booking.png)
+
+### Double booking prevention
+
+When a user makes a booking that already exits, the server renders the 500.html file in the templates folder, telling the user that the booking exists. 
+![Double booking prevention](staticfiles/images/readme-images/double-booking-page.png)
+
+
+### Delete button
+
+Only a logged in user has access to this feature. Once this button is clicked the JavaScript code renders a modal to further get assurance that the user wants to delete that booking before deletion is done.
+
+![Delete booking page](staticfiles/images/readme-images/delete-booking.png)
+
+
+### Logout page
+
+A logged in user can log out by clicking the logout button on the navbar. This action takes the user to the sign out page to get confirmation before the user is logged out.
+
+![Logout page](staticfiles/images/readme-images/log-out.png)
+
+
+### Responsive design
+
+The site was designed to be responsive for both desktop and mobile use.
+This project has been tested using the Google Chrome Developer multi-device emulator with different screen sizes.
+
+
+## Future features
+
+- Create a new model to hold images of africana foods only. There after using django template tags and filters to populate the food images on the index page.
+- Email confirmation after booking is made.
+- Blog page about african foods and their recipes.
+- Contact page
+- Comment page for customers comment about the services provided by africana.
+- The modify and delete button becomes inactive once services have been provided by africana.
+
+
+## Technologies Used
+
+### Languages
+
+  - HTML5
+  - CSS3
+  - JavaScript
+  - Python
+ 
+
+### Frameworks, Libraries, Programs
+
+  - [Django](https://www.djangoproject.com/): python framework was used to create the backend 
+
+
+### Database:
+  - [PostgreSQL](https://www.postgresql.org/): the database was used to store all the data.
+
+
+### Programs & Tools
+
+- [Google Fonts](https://fonts.google.com/): Was used for the font styling.  
+- [Font Awesome](https://fontawesome.com/): was used to generate the icons on the website.
+- [Bootstrap](https://getbootstrap.com/): Was used to create the front-end design.
+- [Gitpod](https://Gitpod.io/): was used as IDE to commit and push the project to GitHub.
+- [GitHub](https://github.com/): Was used as the version control system to manage the code
+- [Canva:](https://www.canva.com/) Was used to create wireframes
+- [Am I Responsive](http://ami.responsivedesign.is/): was used to generate an image showing the website's responsiveness on different screen sizes 
+- [Pip3](https://pypi.org/project/pip/): is the package manager to install Python modules and libraries.
+- [Gunicorn](https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/gunicorn/): "Green Unicorn" is a Python Web Server Gateway to translate HTTP Requests for Python to understand.
+- [Psycopg2](https://pypi.org/project/psycopg2/): PostgreSQL database adapter to manage the Database in Python. 
+- [Heroku](https://dashboard.heroku.com/): the hosting service used to host my website.
+- [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/open/): was used to debug the website.
+- [W3C Validator](https://validator.w3.org/): was used to validate HTML5 codes for this website.
+- [W3C CSS validator](https://jigsaw.w3.org/css-validator/): was used to validate CSS codes for this website.
+- [Github Projects and Kanban board](https://github.com/users/LarisaLG/projects/17/views/1): was used to track the progress of the project.
+- [CI python linter](https://pep8ci.herokuapp.com/): was used to validate python codes.
+- [JS Hint](https://jshint.com/): was used to validate JavaScript codes.
+
+
+## Testing
+
+### Bugs
+
+#### Fixed Bugs
+- The booking form was not rendering. This was fixed after I installed Django crispy forms
+- The use of modal via JavaScript to delete booking was not working. I used the wrong url to trigger the delete action. I fixed 
+  this by replacing urls pattern = [ path('delete_booking/<int:booking_id>/', views.booking_delete,name='booking_delete'),] with 
+  urls pattern = [ path('bookings/delete_booking/<int:booking_id>/', views.booking_delete,name='booking_delete'),]
+
+#### Unresolved Bugs
+
+- The code does not look broken, I don't know why there is validator error.
+ ![signup page W3C  code testing](staticfiles/images/readme-images/unfixed-bug.png)
+
+- There is an uncaught type error in the console of developer tools, however, it does not affect the site in any way.
+ ![Uncaught type error](staticfiles/images/readme-images/uncaught-type-error.png)
+### Manual Testing
+
+#### Device Testing
+
+This Project was tested via a multi-device emulator with different display sizes in the Google Chrome Developer Dashboard.
+The devices tested are below:
+
+- Galaxy fold (Mobile)
+- Samsung Glaxy s8 (Mobile)
+- Nest HubMax (Desktop)
+- Nest Hub (Desktop)
+- iPad Air (Tablet)
+- iPad Mini (Tablet)
+- iPhone 12 pro (Mobile)
+- iPhone 14 pro max (Mobile)
+
+
+#### Browsers Tested
+
+The browsers used for testing were as follows: 
+  - Google Chrome
+  - Firefox
+  - Microsoft Edge
+
+Site testing was done on the Gitpod environment and Heroku.
+The available functionality and user experience is reflected in the table below.
+
+| Goals/actions  | As a guest | As a logged user  | Result | Comment |
+|--|:--:|:--:|:--:|--|
+| I can see the home page | &check; | &check; | Pass | Unauthorised users can't see My bookings page and Book now page |
+| I can see the Login page  | &check; |&check;  |  Pass| |
+| I can see the Register page | &check; |&check;  |  Pass| |
+| I can see the Logout page  | &cross; |&check;  |  Pass| Available only to an authorized users |
+| I can see the Menu page | &check; |&check;  |  Pass| |
+| I can click on My bookings and make bookings as a logged in user | &cross; | &check; | Pass | Available only to an authorized users|
+| I can modify bookings | &cross; |&check;  |  Pass| Available only to an authorized users | Available only to authorized users
+| I can delete bookings | &cross; |&check;  |  Pass| Available only to an authorized users | Available only to authorized users
+| I can click the Book now nav link and see the Book now page | &cross; |&check;  |  Pass| Available only to authorized users
+| I can fill fields in the Book now form | &cross; | &check;  | Pass |Available only to authorized users |
+| I can see the MY bookings page   | &cross; | &check;  | Pass | Available only to authorized users|
+
+<br/>
+
+
+## Validation
+
+### HTML Validation:
+
+The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website. 
+Errors was noticed when carrying out HTML validation for the sign up page. Since it's a generated form from CI codestar blog project, there is no access to the form to do the neccessary modification of the code.
+
+
+<details><summary>Home page</summary>
+
+![](staticfiles/images/readme-images/checker-home-page.png)
+</details>
+<details><summary>Menu page</summary>
+
+![](staticfiles/images/readme-images/checker-menu-page.png)
+</details>
+<details><summary>Sign up page</summary>
+
+![](staticfiles/images/readme-images/checker-signup-page.png)
+</details>
+<details><summary>Login page</summary>
+
+![](staticfiles/images/readme-images/checker-login-page.png)
+</details>
+
+<details><summary>My bookings page</summary>
+
+![](staticfiles/images/readme-images/checker-mybookings-page.png)
+</details>
+
+<details><summary>Book Now page</summary>
+
+![](staticfiles/images/readme-images/checker-booknow-page.png)
+</details>
+
+</details>
+<details><summary>Modify booking page</summary>
+
+![](staticfiles/images/readme-images/checker-editbooking-page.png)
+</details>
+<details><summary>Delete booking page</summary>
+
+![](staticfiles/images/readme-images/checker-deletebooking-page.png)
+</details>
+<details><summary>Logout page</summary>
+
+![](staticfiles/images/readme-images/checker-logout-page.png)
+</details>
+
+---
+### CSS Validation:
+
+The website CSS styling was validated using [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/). 
+![](staticfiles/images/readme-images/checker-styling.png)
+
+---
+### JavaScript Validation:
+
+The website JavaScript code was validated using [JSHint Validation](https://jshint.com/). 
+![](staticfiles/images/readme-images/check-js.png)
+
+---
+<br/>
+
+### Python Validation (PEP8)
+
+All Python code was checked manually with the aid of  [CI Python Linter](https://pep8ci.herokuapp.com/). Errors observed have all been fixed. 
+
+- urls.py
+![urls.py](staticfiles/images/readme-images/checker-urls.png)
+- models.py
+![models.py](staticfiles/images/readme-images/checker-models.png)
+- forms.py
+![forms.py](staticfiles/images/readme-images/checker-forms.png)
+- views.py
+![views.py](staticfiles/images/readme-images/checker-views.png)
 
 ---
 
-Happy coding!
+
+##  Deployment
+
+The development of this project was done with Gitpod, stored on GitHub and deployed using Heroku.
+1. Visit [Heroku](https://heroku.com/)
+2. Log in or create an account if applicable.
+3. On the Heroku dashboard click on the 'new' button.
+4. From the drop-down menu select 'Create new app'.
+5. Choose your preferred app name.
+6. Select the applicable region and click 'Create App'.
+7. Navigate to 'Settings' and scroll down to the 'Config Vars' section. Click on 'Reveal Config Vars' and enter 'PORT' for the key and '8000' for the value and then click 'Add'. Repeat the key and value entry for your DATABASE_URL(the database you are using) and SECRET_KEY(you generated during production).
+8. Click on the 'Deploy' tab. Select GitHub and the connect to the relevant repository. Click 'Deply branch'. You can also select 'Automatic Deploys' so that the site updates when updates are pushed to GitHub, however, you must set 'DEBUG = False' in your settings.py to avoid security concerns for your site.
+9. After your deployment is successful click 'Open app' to view thelive app.
+
+
+### Forking the GitHub Repository
+
+To use this code and make changes without affecting the original code, it is possible to 'fork' the code on the GitHub repository through the following steps:
+
+1. Create  or log into your GitHub account.
+2. Go to the GitHub [repository](https://github.com/osaroo3/django_restaurant_ci_project4).
+3. Click the 'Fork' button in the upper right-hand corner of the page.
+A copy of the repository will be available in your own repository.
+
+
+### Making a Local Clone
+1. Log in to GitHub and locate the GitHub Repository
+2. Under the repository name choose button "Code",  click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open your development editor of choice and open a terminal window in a directory of your choice
+5. Type *git clone*, and then paste the URL you copied in Step 3.
+
+``> git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY``
+
+Press Enter. 
+
+Your local clone will be created.
+
+For more information follow this [link](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop).
+
+
+[Back to the top](#table-of-contents)
+
+
+## Credits
+
+### Code
+
+The idea for structure and the code of this project was from Code Institute's Codestar blog walkthrough project and LarisLG [Barbershop](https://github.com/LarisaLG/barbershop) project:
+  * The base.html code and styling is a modification of that of the codestar blog project.
+  * Credit to LarisaLG for the idea of the menu, my bookings and book now html page with styling.
+  * Credit to LarisaLG for Date picker field and minimum date validator.
+  * The javaScript code for deleting a booking was from codestar blog project.
+  * The idea for my models.py was from Codestar blog and barbarshop by LarisaLG.
+  * Credit to [W3schools](https://www.w3schools.com/django/django_404.php) for the idea to handle double booking server error.
+  * Credit to [Django documentation](https://docs.djangoproject.com/en/5.0/) for "Everything you need to know about Django".
+
+
+
+### Content and Media
+
+  * credit to LarisaLG for the readme structure.
+  * Credit to LarisaLG on how to fork a GitHub repository or make a local clone.
+
+Credit to the following for the images of my homepage:
+1. [Abacha](https://apocomkitchen.co.uk/assets/front/img/product/sliders/615b138763c10.jpg)
+2. [Nkwobi](https://worldlytreat.com/wp-content/uploads/2023/03/Nkwobi-spicy-cow-leg-7.jpg)
+3. [Jollof](https://www.tastingtable.com/1000081/jollof-wars-the-dispute-surrounding-this-west-african-rice-dish/)
+4. [Fried rice](https://www.sweetnspicee.com/wp-content/uploads/2020/11/LEY_1301-scaled.jpg)
+5. [Yam porridge](https://guardian.ng/wp-content/uploads/2020/05/Vegetable-Yam-Porridge.-Photo-My-diaspora-kitchen.jpeg)
+6. [Egusi soup](https://www.forksandfingers.co.uk/wp-content/uploads/2019/06/Pounded-Yam.jpg.pagespeed.ce.GB0JCqfsKY.jpg)
+7. [Afang Soup](https://guardian.ng/wp-content/uploads/2018/09/Afang-soup-recipe-579x598.png)
+8. [Oha soup](https://www.vemscrunch.co.uk/wp-content/uploads/2022/08/Oha-Soup.jpg)
+9. [Banga soup](https://i.pinimg.com/736x/f3/d8/03/f3d803ce13eec61ea8a1a6bbd7d1fff3.jpg)
+
+Note: The use of these images were strictly for educational purposes only
+
+
+### Acknowledgments
+
+I wish to acknowledge my mentor Martina Terlevic , Code Institute's 'Tutor me' and the CI slack community for all the support thus far. -->
