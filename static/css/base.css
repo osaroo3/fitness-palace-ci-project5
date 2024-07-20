@@ -263,7 +263,21 @@ a.category-badge > span.badge:hover {
     border-color: #dc3545;
     border-radius: 0;
 }
+/* My plans page */
 
+.card {
+    width: 15rem;
+    display: inline-block;
+    align-items: center;
+    margin-top: 35px;
+}
+.card-size {
+    width: 240px !important;
+    height: 255px !important;
+}
+.move-left{
+    margin-left: 35px !important;
+}
 
 /* Review */
 #ReviewForm {

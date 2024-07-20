@@ -8,6 +8,7 @@ import stripe
 from .models import Plan
 from sub_checkout.forms import OrderForm
 from profiles.models import UserProfile
+from sub_checkout.models import Order
 # Create your views here.
 
 @require_POST
@@ -47,7 +48,8 @@ def view_sub_checkout(request, p_id):
         if form.is_valid():
             form = form.save(commit=False)
             pid = request.POST.get('client_secret').split('_secret')[0]
-            form.stripe_pid = pid 
+            form.stripe_pid = pid
+            form.user = request.user
             form.save()
             messages.add_message(
                 request,
@@ -68,3 +70,17 @@ def view_sub_checkout(request, p_id):
         'client_secret': intent.client_secret,        
     }
     return render(request, 'sub_checkout/sub_checkout.html', context)
+
+
+def view_my_plan(request):
+    """
+    This view renders all the plans subscribed
+    by a logged in user
+    """
+    if request.user.is_authenticated:
+        plans = Order.objects.filter(user=request.user)
+        return render(
+            request,
+            'sub_checkout/my_plans.html',
+            {'plans': plans}
+        )

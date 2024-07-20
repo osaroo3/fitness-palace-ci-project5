@@ -5,7 +5,7 @@ from sub_checkout.models import Order
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
-        fields = ('plan', 'full_name', 'email', 'phone_number','order_total')
+        fields = ('user','plan', 'full_name', 'email', 'phone_number','order_total')
     
 
     def __init__(self, *args, **kwargs):
@@ -15,6 +15,7 @@ class OrderForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
+            'user':'user',
             'plan': 'Plan',
             'full_name': 'Full Name',
             'email': 'Email Address',

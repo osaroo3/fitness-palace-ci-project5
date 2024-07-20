@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="Subscription mt-5 pt-5 text-center">
+
+    <h3 class="text-center mb-5">My Subscriptions</h3>
+    {% for p in plans %}
+    <div class="card card-size text-white bg-dark border-secondary">
+       <div class="card-body">
+          
+          <div class="subcriptions text-left">
+                {% if user.is_authenticated %}
+                <p>Your Subscription ID is: {{p.id}} </p>
+                <p class="text-white">On {{p.date}}</p>
+                <p>Duration:<b> A year</b></p>
+                <p>You booked:</p>
+                <p>{{p.plan}}</p>
+                  
+                {% endif %}   
+          </div>
+       </div>
+    </div>
+    {% empty %}
+    <div class="subcriptions p-2">
+       <p class="pt-2">You have no subcriptions yet.
+           Click <a href="{%url 'view_my_plan' %}" class="orange">Subscribe now </a></p>
+    </div>
+    
+ 
+    {% endfor %}
+ 
+ </div>
+
+{% endblock %}
