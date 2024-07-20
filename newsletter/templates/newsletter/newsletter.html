@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="overlay"></div>
+<div class="newsletter-row">
+    <div class="newsletter-card">
+        <h3>Please, kindly fill this form to subscribe to our Newsletters:</h3>
+        <form id="newsletter" method="post">
+            {{ form | crispy }}
+            {% csrf_token %}
+            <button id="submitButton" type="submit"
+            class="btn btn-signup btn-lg">Subscribe</button>
+        </form>
+    </div>    
+</div>
+{% endblock %}
+
+
