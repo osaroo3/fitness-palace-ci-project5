@@ -278,6 +278,19 @@ a.category-badge > span.badge:hover {
 .move-left{
     margin-left: 35px !important;
 }
+/* Members*/
+.vl {
+    border-left: 1px solid rgb(12, 16, 12) !important;
+    height: auto !important;
+   
+  }
+
+  .member-row{
+    margin-left: 1px !important;
+    margin-right: 1px !important;
+    max-width: 100% !important;
+    display: flex;
+  }
 
 /* Newsletter form*/
 .newsletter-row{
