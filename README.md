@@ -9,7 +9,7 @@ The [GitHub repository](https://github.com/osaroo3/fitness-palace-ci-project5)
 
 The goal of this project is to build a fitness subscription application with features such as user's ability to join a fitness community and purchase exercise plans and merchandise. Also, for site owner to be able to build an active community around the product based on subscription and individual payments model, sell exercise and nutrition plans, nutrition and exercise products.
 
-## Marketing strategy
+<!-- ## Marketing strategy -->
 
 # Table of content
 
@@ -43,8 +43,8 @@ As a first time visitor, I want:
 * to know the purpose of the site at first glance.
 * to navigate the site intuitively.
 * to have access to all features of the site after registering an account.
-* to be able to make subscribe to available plans.
-* to be able to sign out of my user account.
+* to be able to make subscription to available plans.
+* to be able to make purchases of products.
 * to contact the facility managers
        
         
@@ -58,6 +58,9 @@ As a returning user, I want:
 
 
 #### Site Administrator/ Facility management goals
+
+* Sell execise and nutritional plans
+* Sell exercise and nutritional products
 * Build an active community based on subscription
 * As a site administrator, I want to create, read, update and delete products. 
 * Receive messages from our site users via contact us page.   
@@ -68,37 +71,37 @@ As a returning user, I want:
 GitHub Projects feature was used as a [Kanban board]() for the development of this project, which made is easy to track the progress made and goals attained.
 [User stories]() was used to structure the project into sections of tasks to be achieved, with the kenban board providing the platform. 
 
-<!-- # 
+
 ## Design and Site structure
 
-The site mirrors what an african eatery would look like in the United Kingdom or Europe to give diaspora africans a taste of home.
-The main page is as viewed below.
+The design and structure of the projects is a modification of the code Institutes Boutique Ado project to meet the required features of Fitness Subscription Application project. The fonts, text, color et. al. have been chosen for simplicity and effectiveness in gaining site visitor attention.
+
 
 <details>
-<summary>Africana website look at first glance</summary>
+<summary>Fitness Palace look at first glance</summary>
 
-![Home page](staticfiles/images/readme-images/home-page2.png)
+![Home page]()
 
 </details>
 <br />
 
 ### Functional Structure
 
-**Home page:** The home page has navigation bar features and also some images of the varieties of the african dishes available to users.
+**Home page:** The home page has navigation bar features, images, features that link to other areas of this site, to enable users get a good grasp of what this site is about.
 
-**Menu page:** For access to the menu to make reservations, the user must have an account and sign in.
+**All products:** The all products has a drop down functionality that enables users to access products more effectively utilising the filter functionality enbedded in the dropdown list options. 
 
-**My bookings page:** A logged in user has access to all bookings/reservations made. The user can manage bookings by either modifying them or deleting them if they want to.
+**Clothing:** This has a filter capabilities to render only clothing products.
 
-**Book now page:** A logged in user has full access to the book now page features and can make bookings if they wish to.
+**Nutrition:** This maps to a dropdown link with filter feature to nutrition products.
 
-**Registration page:** The registration page is where the user can register an account and get access to all available features of the site
+**Plans :** The maps to two dropdown links to either take the user to all plans available or plans the user subscribed to.
 
-**Login page:** The login page offers a user with a user account access to all the features of the site when they log in with their login details.
+**login page:** The feature is only available to registered users to enable them have full user access.
 
-**Edit booking page:** The feature is only available to registered users who wish to modify their bookings.
+**Logout page:** Only registered users have the ability to logout..
 
-
+<!-- 
 ### Wireframes
 
 The wireframes used are shown below although modified in the project work:
@@ -181,101 +184,124 @@ The wireframes used are shown below although modified in the project work:
 ![Book now page](staticfiles/images/wireframes/booknow.png)
 
 </details>
-<br />
+<br /> -->
 
 
 ## Features
 
 ### Navbar
 
-Due to the base extension, the navigation bar is present on all pages of the site. If the user is logged in, the right end of the navbar changes from "Welcome, AnonymousUser to welcome, John(depending on the name of the user)". The navbar also collapses into a hamburger icon for smaller screen sizes.
+Because the base is being extended, the navigation bar is present on all pages of the site. The navbar also collapses into a burger icon for smaller screen sizes.
 
-Navigation bar for user's without an account.
+![Navigation bar]()
 
-![Navigation bar for unauthorised user's](staticfiles/images/readme-images/nav-bar2.png)
-
-Navigation bar for logged in users.
-![Authenticated user's Navigation](staticfiles/images/readme-images/nav-bar1.png)
 
 ### Home page
 
-On the Home page, unauthorised users cannot see my bookings and book now links on the nav bar . 
-![Home page](staticfiles/images/readme-images/home-page.png)
+On the Home page, unauthorised users cannot access the dropdown features of 'My account' except the register and login features. 
+![Home page]()
 
 ### Sign up page
 
 This page allows unauthorised users to create an account by following the instructions.
-![Sign up page](staticfiles/images/readme-images/sign-up.png)
+![Sign up page]()
 
 
 ### Login page
 
 This page allows user's with account to login by providing their credentials.
 
-![Sign in page](staticfiles/images/readme-images/sign-in.png)
+![Sign in page]()
 
 
-### Menu page
+### All products page
 
-The menu button on the navbar when clicked, takes the user to the menu page which provides users with available menu and the corresponding price to choose from.
-![Menu page](staticfiles/images/readme-images/menu-page.png)
-
-
-### Book now page
-
-The Book now nav link when clicked, takes the user to the book now page. For logged in user's, a table to fill to make bookings shows up.
-
-#### Book Now page for a logged in user
-
-![Book Now page](staticfiles/images/readme-images/book-now-page.png)
-
-### My Bookings page
-
-The my bookings page displays bookings made by the logged in user, with details about the bookings.If there is no booking yet, the logged in user is told with a further suggestion to make bookings with a provided link to the page to make bookings.
-
-![Booking page](staticfiles/images/readme-images/my-bookings-page.png)
+The all products has a dropdown feature to links such as by price, by rating, by categories and all products. These features has filter capabilities to enable users access their needs as quickly as possible. The all link to the products page with their distinct filter applied.
+![products page]()
 
 
-### Edit booking page
+### Fitness product
 
-Every bookings made by a logged in user can be modified by either editing the bookings or deleting them. The modify and delete button exist on my bookings page.
+To access on fitness products, click 'clothing' on the to header. This feature enables the user to access the products page, However, only fitness products are displayed.
+![products page]()
 
-![Edit booking page](staticfiles/images/readme-images/edit-booking.png)
+### Nutrition product
 
-### Double booking prevention
+To access on Nutrition products, click 'nutrition' on the to header. This feature enables the user to access the products page, However, only nutrition products are displayed.
+![products page]()
 
-When a user makes a booking that already exits, the server renders the 500.html file in the templates folder, telling the user that the booking exists. 
-![Double booking prevention](staticfiles/images/readme-images/double-booking-page.png)
+### Plans
 
+This dropdown feature enables users to access the 'All Plans' page and 'My Plans' page. The all plans page displays all plans users can subscribe to while, the my plans page shows plans users have subscribed to.
+![all plans page]()
+![my plans page]()
 
-### Delete button
+If the user has no plan subscription, the image below shows.
+![my plans page]()
 
-Only a logged in user has access to this feature. Once this button is clicked the JavaScript code renders a modal to further get assurance that the user wants to delete that booking before deletion is done.
+### Profile page
 
-![Delete booking page](staticfiles/images/readme-images/delete-booking.png)
+A logged in user can view and update their profile while also viewing and product purchase made. However, during checkout, if 'save this delivery information to my profile' checkbox is checked, the user profile is updated with that information.
+![profile page]()
 
+### Members page
+
+A logged in user can access the members page. They can view all members of Fitness Palace, see members updates about their successess, and also update members too.
+![members page]()
+
+### Contact Us page
+
+Site users can via the contact us page, contact Fitness Palace to make enquiries or complaints.
+![contact us page]()
+
+### Subscribe to Newsletter page
+
+logged in users can subscribe to Fitness Palace newsletters to get up-to-date information about neal deals, plans, products e.t.c
+![newsletter subscription page]()
 
 ### Logout page
 
-A logged in user can log out by clicking the logout button on the navbar. This action takes the user to the sign out page to get confirmation before the user is logged out.
+A logged in user can log out by clicking the logout button on the 'my accounts' dropdown link. This action takes the user to the sign out page to get confirmation before the user is logged out.
 
-![Logout page](staticfiles/images/readme-images/log-out.png)
+![Logout page]()
+
+### Add products
+
+This feature is only available to facility/admin managers. They can add new products to the site.
+![add products page]()
+
+### Edit products
+
+This feature is only available to facility/admin managers. They can edit products on the site.
+![edit products page]()
+
+### Delete products
+
+This feature is only available to facility/admin managers. They can delete products on the site.
+![delete products]()
+
+### Product details page
+
+Once a product is clicked, it shows the product detail page for that individual product. The user can add that product to bag. Also, the user can scroll down this page and leave a review for that product if they desire. However, this review is subject to approval. They can update it and also delete it.
+![product details page]()
+![product reviews]()
+![product review edit/ delete page]()
+
+### Reviews page
+
+The reviews page showing all reviews about a product from users can be access in the product details page. Once, clicked users can see all reviews about that particular product.
+![All review page]()
 
 
 ### Responsive design
 
-The site was designed to be responsive for both desktop and mobile use.
-This project has been tested using the Google Chrome Developer multi-device emulator with different screen sizes.
+The site was designed to be responsive for both desktop and mobile use and has been tested using the Google Chrome Developer multi-device emulator with different screen sizes.
 
 
 ## Future features
 
-- Create a new model to hold images of africana foods only. There after using django template tags and filters to populate the food images on the index page.
-- Email confirmation after booking is made.
-- Blog page about african foods and their recipes.
-- Contact page
-- Comment page for customers comment about the services provided by africana.
-- The modify and delete button becomes inactive once services have been provided by africana.
+- 
+
 
 
 ## Technologies Used
@@ -295,6 +321,9 @@ This project has been tested using the Google Chrome Developer multi-device emul
 
 ### Database:
   - [PostgreSQL](https://www.postgresql.org/): the database was used to store all the data.
+
+### Media: 
+  - [AWS](https://aws.amazon.com/): Was use to store all media files
 
 
 ### Programs & Tools
@@ -316,6 +345,7 @@ This project has been tested using the Google Chrome Developer multi-device emul
 - [Github Projects and Kanban board](https://github.com/users/LarisaLG/projects/17/views/1): was used to track the progress of the project.
 - [CI python linter](https://pep8ci.herokuapp.com/): was used to validate python codes.
 - [JS Hint](https://jshint.com/): was used to validate JavaScript codes.
+- [AWS](https://aws.amazon.com/): was used to store media files.
 
 
 ## Testing
@@ -323,18 +353,10 @@ This project has been tested using the Google Chrome Developer multi-device emul
 ### Bugs
 
 #### Fixed Bugs
-- The booking form was not rendering. This was fixed after I installed Django crispy forms
-- The use of modal via JavaScript to delete booking was not working. I used the wrong url to trigger the delete action. I fixed 
-  this by replacing urls pattern = [ path('delete_booking/<int:booking_id>/', views.booking_delete,name='booking_delete'),] with 
-  urls pattern = [ path('bookings/delete_booking/<int:booking_id>/', views.booking_delete,name='booking_delete'),]
 
 #### Unresolved Bugs
 
-- The code does not look broken, I don't know why there is validator error.
- ![signup page W3C  code testing](staticfiles/images/readme-images/unfixed-bug.png)
-
-- There is an uncaught type error in the console of developer tools, however, it does not affect the site in any way.
- ![Uncaught type error](staticfiles/images/readme-images/uncaught-type-error.png)
+<!--
 ### Manual Testing
 
 #### Device Testing

@@ -92,6 +92,7 @@
                             <a href="{% url 'newsletter_subscription' %}" class="dropdown-item">Subscribe to Newsletter</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
+                            <a href="{% url 'contact_us' %}" class="dropdown-item">Contact Us</a>                            
                             <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                             {% endif %}

@@ -275,9 +275,7 @@ a.category-badge > span.badge:hover {
     width: 240px !important;
     height: 255px !important;
 }
-.move-left{
-    margin-left: 35px !important;
-}
+
 /* Members*/
 .vl {
     border-left: 1px solid rgb(12, 16, 12) !important;
