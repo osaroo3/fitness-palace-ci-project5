@@ -46,11 +46,7 @@
                         {% endif %}
                     </div>
                 </fieldset>
-                <fieldset class="rounded px-3 mb-5">
-                    <legend class="fieldset-label small text-black px-2 w-auto">Select Plan</legend> 
-                    {{ order_form.plan | as_crispy_field }}
-                    {{ order_form.order_total | as_crispy_field }}
-                </fieldset>
+
                 <fieldset class="px-3">
                     <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                     <!-- A Stripe card element will go here -->

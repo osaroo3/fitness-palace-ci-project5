@@ -12,6 +12,6 @@ class OrderAdmin(admin.ModelAdmin):
         'stripe_pid'
     )
 
-    ordering = ('plan',)
+    ordering = ('-date',)
 
 admin.site.register(Order, OrderAdmin)

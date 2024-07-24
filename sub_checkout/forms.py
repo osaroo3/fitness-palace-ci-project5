@@ -5,7 +5,7 @@ from sub_checkout.models import Order
 class OrderForm(forms.ModelForm):
     class Meta:
         model = Order
-        fields = ('user','plan', 'full_name', 'email', 'phone_number','order_total')
+        fields = ('full_name', 'email', 'phone_number',)
     
 
     def __init__(self, *args, **kwargs):
@@ -15,15 +15,12 @@ class OrderForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'user':'user',
-            'plan': 'Plan',
             'full_name': 'Full Name',
             'email': 'Email Address',
             'phone_number': 'Phone Number',
-            'order_total':'order_total',
         }
 
-        self.fields['plan'].widget.attrs['autofocus'] = True
+        self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
             if self.fields[field].required:
                 placeholder = f'{placeholders[field]} *'

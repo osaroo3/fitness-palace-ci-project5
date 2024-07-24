@@ -99,19 +99,3 @@ form.addEventListener('submit', function(ev) {
         location.reload();
     })
 });
-
-
-// Setting the subscription amount in the subscription checkout page
-var url = $('#payment-form').attr('action');
-console.log(url);
-var urlValue = url.slice(-1);
-
-if (urlValue == 1 ){
-    document.getElementById('id_order_total').value = 20;
-    document.getElementById('id_order_total').readOnly = true;
-} else {
-    document.getElementById('id_order_total').value = 25;
-    document.getElementById('id_order_total').readOnly = true;
-}
-
-

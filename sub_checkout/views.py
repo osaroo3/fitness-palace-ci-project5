@@ -50,6 +50,8 @@ def view_sub_checkout(request, p_id):
             pid = request.POST.get('client_secret').split('_secret')[0]
             form.stripe_pid = pid
             form.user = request.user
+            form.plan = plan
+            form.order_total = total
             form.save()
             messages.add_message(
                 request,
