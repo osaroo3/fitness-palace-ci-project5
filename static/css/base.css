@@ -275,6 +275,11 @@ a.category-badge > span.badge:hover {
     width: 240px !important;
     height: 255px !important;
 }
+/* Profile */
+
+.profile-image{
+    display: flex !important;
+}
 
 /* Members*/
 .vl {
