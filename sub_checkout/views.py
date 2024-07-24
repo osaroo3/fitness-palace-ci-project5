@@ -56,7 +56,8 @@ def view_sub_checkout(request, p_id):
             messages.add_message(
                 request,
                 messages.SUCCESS,
-                'Your subscription was successfull.')
+                'Your subscription was successfull. \
+                    A confirmation email will be sent your email address.')
             return redirect('home')  
 
     order_form = OrderForm()
