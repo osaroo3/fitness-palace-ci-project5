@@ -60,7 +60,7 @@ def view_sub_checkout(request, p_id):
                     A confirmation email will be sent your email address.')
             return redirect('home')  
 
-    order_form = OrderForm()
+    form = OrderForm()
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
@@ -68,7 +68,7 @@ def view_sub_checkout(request, p_id):
 
     context = {
         'plan': plan,
-        'order_form': order_form,
+        'form': form,
         'stripe_public_key': stripe_public_key,
         'client_secret': intent.client_secret,        
     }
