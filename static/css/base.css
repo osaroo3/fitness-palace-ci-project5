@@ -410,4 +410,11 @@ a.category-badge > span.badge:hover {
         font-size: 1rem;
         padding-left: 120px;
     }
+
+    .logo-box > h1 {
+        font-size: 1.8rem;
+    }
+    #button-resize {
+        width: 100px !important;;
+    }
 }
