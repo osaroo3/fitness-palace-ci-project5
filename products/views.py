@@ -9,6 +9,7 @@ from .forms import ProductForm, ReviewForm
 
 # Create your views here.
 
+
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
 
@@ -16,7 +17,7 @@ def all_products(request):
     query = None
     categories = None
     sort = None
-    direction = None    
+    direction = None
 
     if request.GET:
         if 'sort' in request.GET:
@@ -41,10 +42,13 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "You didn't enter \
+                any search criteria!")
                 return redirect(reverse('products'))
-            
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+
+            queries = (
+                Q(name__icontains=query) | Q(description__icontains=query)
+            )
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -100,10 +104,11 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. \
+            Please ensure the form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -127,7 +132,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update product. \
+            Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -164,15 +170,13 @@ def edit_review(request, review_id):
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated review!')
-            
         else:
-            messages.error(request, 'Failed to update review. Please ensure the form is valid.')
-    
+            messages.error(request, 'Failed to update review. \
+                Please ensure the form is valid.')
     form = ReviewForm(instance=review)
-        
 
     template = 'products/edit_review.html'
-    context = { 
+    context = {
         'form': form,
         'review': review,
         'reviews': reviews,
@@ -190,12 +194,12 @@ def delete_review(request, review_id):
 
     return redirect('products')
 
+
 def all_reviews(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = product.reviews.all().order_by("-created_on")
-
 
     context = {
         'product': product,

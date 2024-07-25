@@ -266,13 +266,13 @@ a.category-badge > span.badge:hover {
 /* My plans page */
 
 .card {
-    width: 15rem;
+    width: 25rem;
     display: inline-block;
     align-items: center;
     margin-top: 35px;
 }
 .card-size {
-    width: 240px !important;
+    width: 250px !important;
     height: 255px !important;
 }
 /* Profile */

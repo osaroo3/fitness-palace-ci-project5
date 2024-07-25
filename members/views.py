@@ -3,8 +3,10 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .models import Membership
 
+
 from .forms import MembersForm
 # Create your views here.
+
 
 @login_required
 def members_info(request):

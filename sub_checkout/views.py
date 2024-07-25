@@ -1,4 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, get_object_or_404, HttpResponse)
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -10,6 +11,7 @@ from sub_checkout.forms import OrderForm
 from profiles.models import UserProfile
 from sub_checkout.models import Order
 # Create your views here.
+
 
 @require_POST
 def cache_sub_checkout_data(request):
@@ -27,11 +29,8 @@ def cache_sub_checkout_data(request):
         return HttpResponse(content=e, status=400)
 
 
-
-
 def view_sub_checkout(request, p_id):
     """ A view that renders the subcription checkout page """
-    
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
     plan = get_object_or_404(Plan, pk=p_id)
@@ -58,20 +57,19 @@ def view_sub_checkout(request, p_id):
                 messages.SUCCESS,
                 'Your subscription was successfull. \
                     A confirmation email will be sent your email address.')
-            return redirect('home')  
+            return redirect('home')
 
     form = OrderForm()
 
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
-            Did you forget to set it in your environment?')    
-
+            Did you forget to set it in your environment?')
     context = {
         'plan': plan,
         'form': form,
         'stripe_public_key': stripe_public_key,
-        'client_secret': intent.client_secret,        
-    }
+        'client_secret': intent.client_secret,
+        }
     return render(request, 'sub_checkout/sub_checkout.html', context)
 
 

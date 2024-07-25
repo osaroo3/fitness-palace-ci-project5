@@ -1,14 +1,14 @@
 from django import forms
 from .models import Contact
 
+
 class ContactForm(forms.ModelForm):
     """
     Contact Form to reach us
     """
     class Meta:
         model = Contact
-        fields = ('fullname','email', 'title','message')
-    
+        fields = ('fullname', 'email', 'title', 'message')
 
     def __init__(self, *args, **kwargs):
         """
@@ -31,4 +31,5 @@ class ContactForm(forms.ModelForm):
                 placeholder = placeholders[field]
             self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
-            self.fields[field].label = False        
+            self.fields[field].label = False
+       
