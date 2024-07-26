@@ -8,6 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Roboto';
+    width: 100%;
 }
 
 /* from Bulma */
@@ -398,7 +399,7 @@ a.category-badge > span.badge:hover {
     
     .shop-now-button.btn.btn-lg.rounded-0 {
         font-size: 1rem;
-        width: 180px !important;
+        width: 150px !important;
         margin-left: 45px !important;
     }
 
@@ -409,10 +410,6 @@ a.category-badge > span.badge:hover {
     .text-resize {
         font-size: 1rem;
         padding-left: 120px;
-    }
-
-    .logo-box > h1 {
-        font-size: 1.8rem !important;
     }
 
 }
