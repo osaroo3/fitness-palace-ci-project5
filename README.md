@@ -354,7 +354,22 @@ The site was designed to be responsive for both desktop and mobile use and has b
 
 #### Fixed Bugs
 
+- Some forms where not rendering. This was caused by spelling errors when calling them on the html pages.
+
 #### Unresolved Bugs
+
+- bag page
+<br>
+The error here showed 'duplicated id'. The reason for this error was because some codes of bag.html page was removed and used to create additional 5 html files, which where then called in the bag page using {% include %} tag. Because of this, quantity form was called twice on the bag page thereby causing the W3C validator to pick it as duplicate id error.
+
+![bag page validation](static/images/readme-images/bag-page-error.png)
+
+- members page
+<br>
+The error here was stray end divs tags. However, those end divs tags where needed closing tags.
+
+![members page validation](static/images/readme-images/members-page-validation.png)
+
 
 <!--
 ### Manual Testing
@@ -405,62 +420,22 @@ The available functionality and user experience is reflected in the table below.
 
 ### HTML Validation:
 
-The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website. 
-Errors was noticed when carrying out HTML validation for the sign up page. Since it's a generated form from CI codestar blog project, there is no access to the form to do the neccessary modification of the code.
+The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website. There where errors noticed on the members page and bag page. The errors have been discussed on the unfixed bug section. 
 
-
-<details><summary>Home page</summary>
-
-![](staticfiles/images/readme-images/checker-home-page.png)
-</details>
-<details><summary>Menu page</summary>
-
-![](staticfiles/images/readme-images/checker-menu-page.png)
-</details>
-<details><summary>Sign up page</summary>
-
-![](staticfiles/images/readme-images/checker-signup-page.png)
-</details>
-<details><summary>Login page</summary>
-
-![](staticfiles/images/readme-images/checker-login-page.png)
-</details>
-
-<details><summary>My bookings page</summary>
-
-![](staticfiles/images/readme-images/checker-mybookings-page.png)
-</details>
-
-<details><summary>Book Now page</summary>
-
-![](staticfiles/images/readme-images/checker-booknow-page.png)
-</details>
-
-</details>
-<details><summary>Modify booking page</summary>
-
-![](staticfiles/images/readme-images/checker-editbooking-page.png)
-</details>
-<details><summary>Delete booking page</summary>
-
-![](staticfiles/images/readme-images/checker-deletebooking-page.png)
-</details>
-<details><summary>Logout page</summary>
-
-![](staticfiles/images/readme-images/checker-logout-page.png)
-</details>
+![html validation]()
 
 ---
 ### CSS Validation:
 
 The website CSS styling was validated using [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/). 
-![](staticfiles/images/readme-images/checker-styling.png)
+
+![css validation](static/images/readme-images/css-check.png)
 
 ---
 ### JavaScript Validation:
 
-The website JavaScript code was validated using [JSHint Validation](https://jshint.com/). 
-![](staticfiles/images/readme-images/check-js.png)
+The website JavaScript code was validated using [JSHint Validation](https://jshint.com/). There where no errors, just warnings about template literals available only on ES6.
+
 
 ---
 <br/>

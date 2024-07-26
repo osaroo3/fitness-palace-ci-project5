@@ -21,7 +21,7 @@
     <div class="row">
         <div class="col-12 col-lg-6">
             <p class="text-muted">Please fill out the form below</p>
-            <form method="POST" action="{% url 'contact_us' %}" name="form" method="POST">
+            <form method="POST" action="{% url 'contact_us' %}" name="form">
                     
                 {{ form | crispy }} 
                 {% csrf_token %}

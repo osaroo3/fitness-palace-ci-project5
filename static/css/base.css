@@ -265,7 +265,7 @@ a.category-badge > span.badge:hover {
 }
 /* My plans page */
 
-.card {
+.card-s {
     width: 25rem;
     display: inline-block;
     align-items: center;

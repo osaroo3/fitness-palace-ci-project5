@@ -24,7 +24,7 @@
                 <table class="table table-sm table-borderless">
                     <thead class="text-black">
                         <tr>
-                            <th scope="col text-uppercase">Name</th>
+                            <th scope="col">Name</th>
                             <th scope="col">Price</th>
                             <th scope="col">Duration</th>
                             <th scope="col">Description</th>                            
@@ -46,9 +46,12 @@
                         </td>
                         <td class="py-3">
                             <a href="{% url 'view_sub_checkout' p.id %}" class="my-0 text-uppercase">Subscribe</a>
-                        </td>                                                                         
-            {% endfor%}
+                        </td> 
+                    </tr>                                                                        
+                    {% endfor%}
+                </table>     
+            </div>
         </div>
     </div>
-
+</div>
 {% endblock %}
