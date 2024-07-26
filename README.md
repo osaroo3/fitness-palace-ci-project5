@@ -1,5 +1,5 @@
 Portfolio Project 5 -  Fitness Palace
-![]()
+![](static/images/readme-images/am-i-responsive.png)
 
 The deployed [Fitness Palace]() app.
 
@@ -80,7 +80,7 @@ The design and structure of the projects is a modification of the code Institute
 <details>
 <summary>Fitness Palace look at first glance</summary>
 
-![Home page]()
+![Home page](static/images/readme-images/home-page.png)
 
 </details>
 <br />
@@ -199,42 +199,42 @@ Because the base is being extended, the navigation bar is present on all pages o
 ### Home page
 
 On the Home page, unauthorised users cannot access the dropdown features of 'My account' except the register and login features. 
-![Home page]()
+![Home page](static/images/readme-images/home-page.png)
 
 ### Sign up page
 
 This page allows unauthorised users to create an account by following the instructions.
-![Sign up page]()
+![Sign up page](static/images/readme-images/sign-up-page.png)
 
 
 ### Login page
 
 This page allows user's with account to login by providing their credentials.
 
-![Sign in page]()
+![Sign in page](static/images/readme-images/login-page.png)
 
 
 ### All products page
 
 The all products has a dropdown feature to links such as by price, by rating, by categories and all products. These features has filter capabilities to enable users access their needs as quickly as possible. The all link to the products page with their distinct filter applied.
-![products page]()
+![products page](static/images/readme-images/all-products-page.png)
 
 
 ### Fitness product
 
 To access on fitness products, click 'clothing' on the to header. This feature enables the user to access the products page, However, only fitness products are displayed.
-![products page]()
+![products page](static/images/readme-images/fitness-product-page.png)
 
 ### Nutrition product
 
 To access on Nutrition products, click 'nutrition' on the to header. This feature enables the user to access the products page, However, only nutrition products are displayed.
-![products page]()
+![products page](static/images/readme-images/nutrition-product-page.png)
 
 ### Plans
 
 This dropdown feature enables users to access the 'All Plans' page and 'My Plans' page. The all plans page displays all plans users can subscribe to while, the my plans page shows plans users have subscribed to.
-![all plans page]()
-![my plans page]()
+![all plans page](static/images/readme-images/all-plans-page.png)
+![my plans page](static/images/readme-images/my-plans-page.png)
 
 If the user has no plan subscription, the image below shows.
 ![my plans page]()
@@ -247,50 +247,78 @@ A logged in user can view and update their profile while also viewing and produc
 ### Members page
 
 A logged in user can access the members page. They can view all members of Fitness Palace, see members updates about their successess, and also update members too.
-![members page]()
+![members page](static/images/readme-images/members-page.png)
 
 ### Contact Us page
 
 Site users can via the contact us page, contact Fitness Palace to make enquiries or complaints.
 ![contact us page]()
 
-### Subscribe to Newsletter page
+### Newsletter
 
 logged in users can subscribe to Fitness Palace newsletters to get up-to-date information about neal deals, plans, products e.t.c
-![newsletter subscription page]()
+![newsletter subscription page](static/images/readme-images/newsletter-page.png)
 
 ### Logout page
 
 A logged in user can log out by clicking the logout button on the 'my accounts' dropdown link. This action takes the user to the sign out page to get confirmation before the user is logged out.
 
-![Logout page]()
+![Logout page](static/images/readme-images/logout-page.png)
 
-### Add products
+### Add products (Facilty Management)
 
 This feature is only available to facility/admin managers. They can add new products to the site.
-![add products page]()
+![add products page](static/images/readme-images/add-product-page.png)
 
-### Edit products
+### Edit products (Facility Management)
 
 This feature is only available to facility/admin managers. They can edit products on the site.
-![edit products page]()
+![edit products page](static/images/readme-images/edit-product-page.png)
 
-### Delete products
+### Delete products (Facility Management)
 
 This feature is only available to facility/admin managers. They can delete products on the site.
-![delete products]()
+
+![delete products](static/images/readme-images/product-deleted-image.png)
+
 
 ### Product details page
 
 Once a product is clicked, it shows the product detail page for that individual product. The user can add that product to bag. Also, the user can scroll down this page and leave a review for that product if they desire. However, this review is subject to approval. They can update it and also delete it.
-![product details page]()
+![product details page](static/images/readme-images/product-details-page-a.png)
 ![product reviews]()
 ![product review edit/ delete page]()
 
 ### Reviews page
 
 The reviews page showing all reviews about a product from users can be access in the product details page. Once, clicked users can see all reviews about that particular product.
-![All review page]()
+![All review page](static/images/readme-images/all-reviews-page.png)
+
+### Add to bag
+
+![]()
+
+### Email verification
+
+![]()
+
+### Product order success
+
+![]()
+
+### Email confirmation of purchase/subscription
+
+![](static/images/readme-images/order-email.png)
+
+![](static/images/readme-images/subscrition-email.png)
+
+### Footer
+
+![]()
+
+### Facebook page
+
+![]()
 
 
 ### Responsive design
