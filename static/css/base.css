@@ -336,6 +336,19 @@ a.category-badge > span.badge:hover {
     color: #23BBBB;
 }
 
+/* Footer*/
+
+.link {
+    margin-left: 5px;
+    color: #dbe2e2;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
