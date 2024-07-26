@@ -399,7 +399,7 @@ The available functionality and user experience is reflected in the table below.
 | I can see the MY bookings page   | &cross; | &check;  | Pass | Available only to authorized users|
 
 <br/>
-
+-->
 
 ## Validation
 
@@ -469,17 +469,300 @@ The website JavaScript code was validated using [JSHint Validation](https://jshi
 
 All Python code was checked manually with the aid of  [CI Python Linter](https://pep8ci.herokuapp.com/). Errors observed have all been fixed. 
 
+
 - urls.py
-![urls.py](staticfiles/images/readme-images/checker-urls.png)
-- models.py
-![models.py](staticfiles/images/readme-images/checker-models.png)
-- forms.py
-![forms.py](staticfiles/images/readme-images/checker-forms.png)
+
+<details><summary>bag urls.py</summary>
+
+![bag urls](static/images/readme-images/bag-urls-py.png)
+</details>
+
+<details><summary>checkout urls.py</summary>
+
+![checkout urls](static/images/readme-images/checkout-urls-py.png)
+</details>
+
+<details><summary>contact us urls.py</summary>
+
+![contact us urls](static/images/readme-images/contact-us-urls-py.png)
+</details>
+
+<details><summary>fitness palace urls.py</summary>
+
+![fitness palace urls](static/images/readme-images/fitness-palace-urls-py.png)
+</details>
+
+<details><summary>home urls.py</summary>
+
+![home urls](static/images/readme-images/home-urls-py.png)
+</details>
+
+<details><summary>members urls.py</summary>
+
+![members urls](static/images/readme-images/members-urls-py.png)
+</details>
+
+<details><summary>newsletter urls.py</summary>
+
+![newsletter urls](static/images/readme-images/newsletter-urls-py.png)
+</details>
+
+<details><summary>products urls.py</summary>
+
+![products urls](static/images/readme-images/products-urls-py.png)
+</details>
+
+<details><summary>profiles urls.py</summary>
+
+![profiles urls](static/images/readme-images/profiles-urls-py.png)
+</details>
+
+<details><summary>subcheckout urls.py</summary>
+
+![subcheckout urls](static/images/readme-images/subcheckout-urls-py.png)
+</details>
+
+<details><summary>subscribe urls.py</summary>
+
+![subscribe urls](static/images/readme-images/subscribe-urls-py.png)
+</details>
+
+<br>
+
 - views.py
-![views.py](staticfiles/images/readme-images/checker-views.png)
+
+<details><summary>bag views.py</summary>
+
+![bag views](static/images/readme-images/bag-views-py.png)
+</details>
+
+<details><summary>checkout views.py</summary>
+
+![checkout views](static/images/readme-images/checkout-views-py.png)
+</details>
+
+<details><summary>contact us views.py</summary>
+
+![contact us views](static/images/readme-images/contact-us-views-py.png)
+</details>
+
+<details><summary>fitness palace views.py</summary>
+
+![fitness palace views](static/images/readme-images/fitness-palace-views-py.png)
+</details>
+
+<details><summary>home views.py</summary>
+
+![home views](static/images/readme-images/home-views-py.png)
+</details>
+
+<details><summary>members views.py</summary>
+
+![members views](static/images/readme-images/members-views-py.png)
+</details>
+
+<details><summary>newsletter views.py</summary>
+
+![newsletter views](static/images/readme-images/newsletter-views-py.png)
+</details>
+
+<details><summary>products views.py</summary>
+
+![products views](static/images/readme-images/products-views-py.png)
+</details>
+
+<details><summary>profiles views.py</summary>
+
+![profiles views](static/images/readme-images/profiles-views-py.png)
+</details>
+
+<details><summary>subcheckout views.py</summary>
+
+![subcheckout views](static/images/readme-images/subcheckout-views-py.png)
+</details>
+
+<details><summary>subscribe views.py</summary>
+
+![subscribe views](static/images/readme-images/subscribe-views-py.png)
+</details>
+
+<br>
+
+- forms.py
+
+<details><summary>checkout forms.py</summary>
+
+![checkout forms](static/images/readme-images/checkout-forms-py.png)
+</details>
+
+<details><summary>contact us forms.py</summary>
+
+![contact us forms](static/images/readme-images/contact-us-forms-py.png)
+</details>
+
+<details><summary>members forms.py</summary>
+
+![members forms](static/images/readme-images/members-forms-py.png)
+</details>
+
+<details><summary>newsletter forms.py</summary>
+
+![newsletter forms](static/images/readme-images/newsletter-forms-py.png)
+</details>
+
+<details><summary>products forms.py</summary>
+
+![products forms](static/images/readme-images/products-forms-py.png)
+</details>
+
+<details><summary>profiles forms.py</summary>
+
+![profiles forms](static/images/readme-images/profiles-forms-py.png)
+</details>
+
+<details><summary>subcheckout forms.py</summary>
+
+![subcheckout forms](static/images/readme-images/subcheckout-forms-py.png)
+</details>
+
+<br>
+
+- apps.py
+
+<details><summary>bag apps.py</summary>
+
+![bag apps](static/images/readme-images/bag-apps-py.png)
+</details>
+
+<details><summary>checkout apps.py</summary>
+
+![checkout apps](static/images/readme-images/checkout-apps-py.png)
+</details>
+
+<br>
+
+- contexts.py
+
+<details><summary>bag contexts.py</summary>
+
+![bag contexts](static/images/readme-images/bag-contexts-py.png)
+</details>
+
+<br>
+
+- signals.py
+
+<details><summary>checkout signals.py</summary>
+
+![checkout signals](static/images/readme-images/checkout-signals-py.png)
+</details>
+
+<br>
+
+- webhook_handler.py
+
+<details><summary> checkout webhook_handler.py</summary>
+
+![checkout webhook handler](static/images/readme-images/checkout-wh-handler-py.png)
+</details>
+
+<details><summary> subcheckout webhook_handler.py</summary>
+
+![subcheckout webhook handler](static/images/readme-images/subcheckout-wh-handler-py.png)
+</details>
+
+<br>
+
+- webhook.py
+
+<details><summary> checkout webhook.py</summary>
+
+![checkout webhook](static/images/readme-images/checkout-wh-py.png)
+</details>
+
+<details><summary> subcheckout webhook.py</summary>
+
+![subcheckout webhook](static/images/readme-images/subcheckout-wh-py.png)
+</details>
+
+<br>
+
+- admin.py
+
+<details><summary>checkout admin.py</summary>
+
+![checkout admin](static/images/readme-images/checkout-admin-py.png)
+</details>
+
+<details><summary>contact us admin.py</summary>
+
+![contact us admin](static/images/readme-images/contact-us-admin-py.png)
+</details>
+
+<details><summary>members admin.py</summary>
+
+![members admin](static/images/readme-images/members-admin-py.png)
+</details>
+
+<details><summary>newsletter admin.py</summary>
+
+![newsletter admin](static/images/readme-images/newletter-admin-py.png)
+</details>
+
+<details><summary>subcheckout admin.py</summary>
+
+![subcheckout admin](static/images/readme-images/subcheckout-admin-py.png)
+</details>
+
+<br>
+
+- models.py
+
+<details><summary>checkout models.py</summary>
+
+![checkout models](static/images/readme-images/checkout-models-py.png)
+</details>
+
+<details><summary>contact us models.py</summary>
+
+![contact us models](static/images/readme-images/contact-us-models-py.png)
+</details>
+
+<details><summary>members models.py</summary>
+
+![members models](static/images/readme-images/members-models-py.png)
+</details>
+
+<details><summary>newsletter models.py</summary>
+
+![newsletter models](static/images/readme-images/newsletter-models-py.png)
+</details>
+
+<details><summary>products models.py</summary>
+
+![products models](static/images/readme-images/products-models-py.png)
+</details>
+
+<details><summary>profiles models.py</summary>
+
+![profiles models](static/images/readme-images/profiles-models-py.png)
+</details>
+
+<details><summary>subcheckout models.py</summary>
+
+![subcheckout models](static/images/readme-images/subcheckout-models-py.png)
+</details>
+
+<details><summary>subscribe models.py</summary>
+
+![subscribe models](static/images/readme-images/subscribe-models-py.png)
+</details>
+
+
+
 
 ---
-
+<!--
 
 ##  Deployment
 

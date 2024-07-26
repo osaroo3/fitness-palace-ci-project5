@@ -196,7 +196,7 @@ def delete_review(request, review_id):
 
 
 def all_reviews(request, product_id):
-    """ A view to show individual product details """
+    """ A view to show  all individual product reviews """
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = product.reviews.all().order_by("-created_on")
