@@ -101,7 +101,7 @@ The design and structure of the projects is a modification of the code Institute
 
 **Logout page:** Only registered users have the ability to logout..
 
-<!-- 
+ 
 ### Wireframes
 
 The wireframes used are shown below although modified in the project work:
@@ -109,16 +109,79 @@ The wireframes used are shown below although modified in the project work:
 **Models**
 
 <details>
-<summary>Menu model</summary>
+<summary>Review model</summary>
 
-![Menu model](staticfiles/images/wireframes/menu-model.png)
+![Review model](static/images/readme-images/review-model.png)
 
 </details>
 
 <details>
-<summary>Booking model</summary>
+<summary>Contact model</summary>
 
-![Booking model](staticfiles/images/wireframes/booking-model.png)
+![Contact model](static/images/readme-images/contact-model.png)
+
+</details>
+
+<details>
+<summary>Membership model</summary>
+
+![Membership model](static/images/readme-images/membership-model.png)
+
+</details>
+
+<details>
+<summary>Newsletter model</summary>
+
+![Newsletter model](static/images/readme-images/newsletter-model.png)
+
+</details>
+
+<details>
+<summary>Order model</summary>
+
+![Subcheckout order model](static/images/readme-images/subcheckout-order-model.png)
+
+</details>
+
+<details>
+<summary>Plan model</summary>
+
+![Plan model](static/images/readme-images/plan-model.png)
+
+</details>
+
+<details>
+<summary>Userprofile model</summary>
+
+![Userprofile model](static/images/readme-images/userprofile-model.png)
+
+</details>
+
+<details>
+<summary>Product model</summary>
+
+![Product model](static/images/readme-images/product-model.png)
+
+</details>
+
+<details>
+<summary>Checkout model</summary>
+
+![Checkout model](static/images/readme-images/checkout-model.png)
+
+</details>
+
+<details>
+<summary>Category model</summary>
+
+![Category model](static/images/readme-images/category-model.png)
+
+</details>
+
+<details>
+<summary>OrderLineItem model</summary>
+
+![OrderlineItem model](static/images/readme-images/orderlineitem-model.png)
 
 </details>
 </br>
@@ -126,30 +189,79 @@ The wireframes used are shown below although modified in the project work:
 **For Mobile view and small screens**
 
 <details>
-<summary>Book now page</summary>
-
-![Book now page](staticfiles/images/wireframes/book-now.png)
-
-</details>
-
-<details>
 <summary>Home page</summary>
 
-![Home page](staticfiles/images/wireframes/home.png)
+![Home page](static/images/readme-images/home-mobile.png)
 
 </details>
 
 <details>
-<summary>Menu page</summary>
+<summary>All products page</summary>
 
-![Menu page](staticfiles/images/wireframes/menu.png)
+![products page](static/images/readme-images/products-mobile.png)
 
 </details>
 
 <details>
-<summary>My bookings page</summary>
+<summary>All plans page</summary>
 
-![My bookings page](staticfiles/images/wireframes/mybooking.png)
+![all plans page](static/images/readme-images/plans-mobile.png)
+
+</details>
+
+<details>
+<summary>My plans page</summary>
+
+![My plans page](static/images/readme-images/my-subscription-mobile.png)
+
+</details>
+
+<details>
+<summary>My profile page</summary>
+
+![My profile page](static/images/readme-images/my-profile-mobile.png)
+
+</details>
+
+<details>
+<summary>Members page</summary>
+
+![Members page](static/images/readme-images/members-mobile.png)
+
+</details>
+
+<details>
+<summary>Contact us page</summary>
+
+![Contact us page](static/images/readme-images/contact-us-mobile.png)
+
+</details>
+
+<details>
+<summary>Newsletter subscription page</summary>
+
+![Newsletter subscription page](static/images/readme-images/newsletter-mobile.png)
+
+</details>
+
+<details>
+<summary>Signout page</summary>
+
+![Signout page](static/images/readme-images/sign-out-mobile.png)
+
+</details>
+
+<details>
+<summary>Signup page</summary>
+
+![Signup page](static/images/readme-images/sign-up-mobile.png)
+
+</details>
+
+<details>
+<summary>Sign in page</summary>
+
+![Sign in page](static/images/readme-images/sign-in-mobile.png)
 
 </details>
 
@@ -157,35 +269,86 @@ The wireframes used are shown below although modified in the project work:
 <br />
 
 **For Desktop view**
+
 <details>
 <summary>Home page</summary>
 
-![Home page](staticfiles/images/wireframes/homepage.png)
+![Home page](static/images/readme-images/home-desktop.png)
 
 </details>
 
 <details>
-<summary>Menu page</summary>
+<summary>All products page</summary>
 
-![Menu page](staticfiles/images/wireframes/ourmenu.png)
-
-</details>
-
-<details>
-<summary>My bookings page</summary>
-
-![My bookings page](staticfiles/images/wireframes/my-booking.png)
+![products page](static/images/readme-images/products-desktop.png)
 
 </details>
 
 <details>
-<summary>Book now page</summary>
+<summary>All plans page</summary>
 
-![Book now page](staticfiles/images/wireframes/booknow.png)
+![all plans page](static/images/readme-images/plans-desktop.png)
 
 </details>
-<br /> -->
 
+<details>
+<summary>My plans page</summary>
+
+![My plans page](static/images/readme-images/my-subscription-desktop.png)
+
+</details>
+
+<details>
+<summary>My profile page</summary>
+
+![My profile page](static/images/readme-images/my-profile-desktop.png)
+
+</details>
+
+<details>
+<summary>Members page</summary>
+
+![Members page](static/images/readme-images/members-room-desktop.png)
+
+</details>
+
+<details>
+<summary>Contact us page</summary>
+
+![Contact us page](static/images/readme-images/contact-us-desktop.png)
+
+</details>
+
+<details>
+<summary>Newsletter subscription page</summary>
+
+![Newsletter subscription page](static/images/readme-images/newsletter-desktop.png)
+
+</details>
+
+<details>
+<summary>Signout page</summary>
+
+![Signout page](static/images/readme-images/sign-out-desktop.png)
+
+</details>
+
+<details>
+<summary>Signup page</summary>
+
+![Signup page](static/images/readme-images/sign-up-desktop.png)
+
+</details>
+
+<details>
+<summary>Sign in page</summary>
+
+![Sign in page](static/images/readme-images/sign-in-desktop.png)
+
+</details>
+
+
+<br />
 
 ## Features
 
@@ -193,7 +356,7 @@ The wireframes used are shown below although modified in the project work:
 
 Because the base is being extended, the navigation bar is present on all pages of the site. The navbar also collapses into a burger icon for smaller screen sizes.
 
-![Navigation bar]()
+![Navigation bar](static/images/readme-images/nav-bar.png)
 
 
 ### Home page
@@ -237,12 +400,12 @@ This dropdown feature enables users to access the 'All Plans' page and 'My Plans
 ![my plans page](static/images/readme-images/my-plans-page.png)
 
 If the user has no plan subscription, the image below shows.
-![my plans page]()
+![my plans page](static/images/readme-images/my-plans-page-b.png)
 
 ### Profile page
 
 A logged in user can view and update their profile while also viewing and product purchase made. However, during checkout, if 'save this delivery information to my profile' checkbox is checked, the user profile is updated with that information.
-![profile page]()
+![profile page](static/images/readme-images/my-profile-page.png)
 
 ### Members page
 
@@ -252,12 +415,12 @@ A logged in user can access the members page. They can view all members of Fitne
 ### Contact Us page
 
 Site users can via the contact us page, contact Fitness Palace to make enquiries or complaints.
-![contact us page]()
+![contact us page](static/images/readme-images/contact-us-page.png)
 
 ### Newsletter
 
-logged in users can subscribe to Fitness Palace newsletters to get up-to-date information about neal deals, plans, products e.t.c
-![newsletter subscription page](static/images/readme-images/newsletter-page.png)
+logged in users can subscribe to Fitness Palace newsletters to get up-to-date information about new deals, plans, products e.t.c
+![newsletter subscription page](static/images/readme-images/newsletter-subscription-page.png)
 
 ### Logout page
 
@@ -286,8 +449,10 @@ This feature is only available to facility/admin managers. They can delete produ
 
 Once a product is clicked, it shows the product detail page for that individual product. The user can add that product to bag. Also, the user can scroll down this page and leave a review for that product if they desire. However, this review is subject to approval. They can update it and also delete it.
 ![product details page](static/images/readme-images/product-details-page-a.png)
-![product reviews]()
-![product review edit/ delete page]()
+<br>
+![edit product review](static/images/readme-images/edit-review-page.png)
+<br>
+![delete product reviews](static/images/readme-images/delete-product-review.png)
 
 ### Reviews page
 
@@ -296,21 +461,48 @@ The reviews page showing all reviews about a product from users can be access in
 
 ### Add to bag
 
-![]()
+Add to bag page, shows a detailed summary of product added to the bag at the top corner of the screen.
+
+![](static/images/readme-images/add-to-bag-page.png)
 
 ### Email verification
 
-![]()
+Email verification is sent when a user registers with fitness palace as a security/authentication measure.
+
+![](static/images/readme-images/email-verifications-page.png)
+
+![](static/images/readme-images/email-verifications-page-b.png)
 
 ### Product order success
 
-![]()
+A brief summary of the order success comes up after a successful purchase of product was completed.
+
+![](static/images/readme-images/order-success-page.png)
 
 ### Email confirmation of purchase/subscription
+
+After purchase of product or subscription plan the user receives email confirmations.
 
 ![](static/images/readme-images/order-email.png)
 
 ![](static/images/readme-images/subscrition-email.png)
+
+### Product checkout page
+
+This page is where certain details is required of the user to complete the purchase of products. If successful, the webhook functionality is triggered to email the user about their purchase.
+
+![](static/images/readme-images/checkout-page.png)
+<br>
+![](static/images/readme-images/checkout-wh-page.png)
+
+### Plan checout page
+
+This page takes some user information to complete subscription to chosen plan. If successful, the webhook functionality is triggered to email the user about their plan subscription.
+
+![](static/images/readme-images/plan-checkout-page.png)
+<br>
+
+![](static/images/readme-images/subcheckout-wh.png)
 
 ### Footer
 
@@ -397,6 +589,10 @@ The error here showed 'duplicated id'. The reason for this error was because som
 The error here was stray end divs tags. However, those end divs tags where needed closing tags.
 
 ![members page validation](static/images/readme-images/members-page-validation.png)
+
+- members page
+<br>
+The content does not maintain a row with three columns after more that two members have posted to the chat room. Also, a member is only recorded in the members column after posting on the room.
 
 
 <!--
@@ -765,7 +961,187 @@ All Python code was checked manually with the aid of  [CI Python Linter](https:/
 
 
 ---
-<!--
+
+
+### Database
+
+To obtain your database url:
+
+- Navigate to[PostgreSQL from Code Institute](https://dbs.ci-dbs.net/)
+- Enter your student email address in the input field provided.
+- Click Submit.
+- Wait while the database is created.
+- After your database is successfully created, the url will be emailed to your student email inbox.
+
+### Amazon AWS
+
+This project uses [AWS](https://aws.amazon.com) to store media and static files online, due to the fact that Heroku doesn't persist this type of data.
+
+Once you've created an AWS account and logged-in, follow these series of steps to get your project connected.
+Make sure you're on the **AWS Management Console** page.
+
+#### S3 Bucket
+
+- Search for **S3**.
+- Create a new bucket, give it a name (matching your Heroku app name), and choose the region closest to you.
+- Uncheck **Block all public access**, and acknowledge that the bucket will be public (required for it to work on Heroku).
+- From **Object Ownership**, make sure to have **ACLs enabled**, and **Bucket owner preferred** selected.
+- From the **Properties** tab, turn on static website hosting, and type `index.html` and `error.html` in their respective fields, then click **Save**.
+- From the **Permissions** tab, paste in the following CORS configuration:
+
+	```shell
+	[
+		{
+			"AllowedHeaders": [
+				"Authorization"
+			],
+			"AllowedMethods": [
+				"GET"
+			],
+			"AllowedOrigins": [
+				"*"
+			],
+			"ExposeHeaders": []
+		}
+	]
+	```
+
+- Copy your **ARN** string.
+- From the **Bucket Policy** tab, select the **Policy Generator** link, and use the following steps:
+	- Policy Type: **S3 Bucket Policy**
+	- Effect: **Allow**
+	- Principal: `*`
+	- Actions: **GetObject**
+	- Amazon Resource Name (ARN): **paste-your-ARN-here**
+	- Click **Add Statement**
+	- Click **Generate Policy**
+	- Copy the entire Policy, and paste it into the **Bucket Policy Editor**
+
+		```shell
+		{
+			"Id": "Policy1234567890",
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Sid": "Stmt1234567890",
+					"Action": [
+						"s3:GetObject"
+					],
+					"Effect": "Allow",
+					"Resource": "arn:aws:s3:::your-bucket-name/*"
+					"Principal": "*",
+				}
+			]
+		}
+		```
+
+	- Before you click "Save", add `/*` to the end of the Resource key in the Bucket Policy Editor (like above).
+	- Click **Save**.
+- From the **Access Control List (ACL)** section, click "Edit" and enable **List** for **Everyone (public access)**, and accept the warning box.
+	- If the edit button is disabled, you need to change the **Object Ownership** section above to **ACLs enabled** (mentioned above).
+
+#### IAM
+
+Back on the AWS Services Menu, search for and open **IAM** (Identity and Access Management).
+Once on the IAM page, follow these steps:
+
+- From **User Groups**, click **Create New Group**.
+	- Suggested Name: `group-retro-reboot` (group + the project name)
+- Tags are optional, but you must click it to get to the **review policy** page.
+- From **User Groups**, select your newly created group, and go to the **Permissions** tab.
+- Open the **Add Permissions** dropdown, and click **Attach Policies**.
+- Select the policy, then click **Add Permissions** at the bottom when finished.
+- From the **JSON** tab, select the **Import Managed Policy** link.
+	- Search for **S3**, select the `AmazonS3FullAccess` policy, and then **Import**.
+	- You'll need your ARN from the S3 Bucket copied again, which is pasted into "Resources" key on the Policy.
+
+		```shell
+		{
+			"Version": "2012-10-17",
+			"Statement": [
+				{
+					"Effect": "Allow",
+					"Action": "s3:*",
+					"Resource": [
+						"arn:aws:s3:::your-bucket-name",
+						"arn:aws:s3:::your-bucket-name/*"
+					]
+				}
+			]
+		}
+		```
+	
+	- Click **Review Policy**.
+	- Suggested Name: `policy + the project name`
+	- Provide a description:
+		- "Access to S3 Bucket for retro-reboot static files."
+	- Click **Create Policy**.
+- From **User Groups**, click your group.
+- Click **Attach Policy**.
+- Search for the policy you've just created and select it, then **Attach Policy**.
+- From **User Groups**, click **Add User**.
+	- Suggested Name: `user + the project name`
+- For "Select AWS Access Type", select **Programmatic Access**.
+- Select the group to add your new user to
+- Tags are optional, but you must click it to get to the **review user** page.
+- Click **Create User** once done.
+- You should see a button to **Download .csv**, so click it to save a copy on your system.
+	- **IMPORTANT**: once you pass this page, you cannot come back to download it again, so do it immediately!
+	- This contains the user's **Access key ID** and **Secret access key**.
+	- `AWS_ACCESS_KEY_ID` = **Access key ID**
+	- `AWS_SECRET_ACCESS_KEY` = **Secret access key**
+
+#### Final AWS Setup
+
+- If Heroku Config Vars has `DISABLE_COLLECTSTATIC` still, this can be removed now, so that AWS will handle the static files.
+- Back within **S3**, create a new folder called: `media`.
+- Select any existing media images for your project to prepare them for being uploaded into the new folder.
+- Under **Manage Public Permissions**, select **Grant public read access to this object(s)**.
+- No further settings are required, so click **Upload**.
+
+### Stripe API
+
+This project uses [Stripe](https://stripe.com) to handle the ecommerce payments.
+
+Once you've created a Stripe account and logged-in, follow these series of steps to get your project connected.
+
+- From your Stripe dashboard, click to expand the "Get your test API keys".
+- You'll have two keys here:
+	- `STRIPE_PUBLIC_KEY` = Publishable Key (starts with **pk**)
+	- `STRIPE_SECRET_KEY` = Secret Key (starts with **sk**)
+
+As a backup, in case users prematurely close the purchase-order page during payment, we can include Stripe Webhooks.
+
+- From your Stripe dashboard, click **Developers**, and select **Webhooks**.
+- From there, click **Add Endpoint**.
+	- `your site link/checkout/wh/`
+- Click **receive all events**.
+- Click **Add Endpoint** to complete the process.
+- You'll have a new key here:
+	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
+
+### Gmail API
+
+This project uses [Gmail](https://mail.google.com) to handle sending emails to users for account verification and purchase order confirmations.
+
+Once you've created a Gmail (Google) account and logged-in, follow these series of steps to get your project connected.
+
+- Click on the **Account Settings** (cog icon) in the top-right corner of Gmail.
+- Click on the **Accounts and Import** tab.
+- Within the section called "Change account settings", click on the link for **Other Google Account settings**.
+- From this new page, select **Security** on the left.
+- Select **2-Step Verification** to turn it on. (verify your password and account)
+- Once verified, select **Turn On** for 2FA.
+- Navigate back to the **Security** page, and you'll see a new option called **App passwords**.
+- This might prompt you once again to confirm your password and account.
+- Select **Mail** for the app type.
+- Select **Other (Custom name)** for the device type.
+	- Any custom name, such as "Django"
+- You'll be provided with a 16-character password (API key).
+	- Save this somewhere locally, as you cannot access this key again later!
+	- `EMAIL_HOST_PASS` = user's 16-character API key
+	- `EMAIL_HOST_USER` = user's own personal Gmail email address
+
 
 ##  Deployment
 
@@ -776,7 +1152,7 @@ The development of this project was done with Gitpod, stored on GitHub and deplo
 4. From the drop-down menu select 'Create new app'.
 5. Choose your preferred app name.
 6. Select the applicable region and click 'Create App'.
-7. Navigate to 'Settings' and scroll down to the 'Config Vars' section. Click on 'Reveal Config Vars' and enter 'PORT' for the key and '8000' for the value and then click 'Add'. Repeat the key and value entry for your DATABASE_URL(the database you are using) and SECRET_KEY(you generated during production).
+7. Navigate to 'Settings' and scroll down to the 'Config Vars' section. Click on 'Reveal Config Vars' and enter all the details you have on your env.py file. Remember to use your production database here.
 8. Click on the 'Deploy' tab. Select GitHub and the connect to the relevant repository. Click 'Deply branch'. You can also select 'Automatic Deploys' so that the site updates when updates are pushed to GitHub, however, you must set 'DEBUG = False' in your settings.py to avoid security concerns for your site.
 9. After your deployment is successful click 'Open app' to view thelive app.
 
@@ -786,12 +1162,13 @@ The development of this project was done with Gitpod, stored on GitHub and deplo
 To use this code and make changes without affecting the original code, it is possible to 'fork' the code on the GitHub repository through the following steps:
 
 1. Create  or log into your GitHub account.
-2. Go to the GitHub [repository](https://github.com/osaroo3/django_restaurant_ci_project4).
+2. Go to the GitHub [repository](https://github.com/osaroo3/fitness-palace-ci-project5).
 3. Click the 'Fork' button in the upper right-hand corner of the page.
 A copy of the repository will be available in your own repository.
 
 
 ### Making a Local Clone
+
 1. Log in to GitHub and locate the GitHub Repository
 2. Under the repository name choose button "Code",  click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
@@ -814,7 +1191,7 @@ For more information follow this [link](https://docs.github.com/en/repositories/
 
 ### Code
 
-The idea for structure and the code of this project was from Code Institute's Codestar blog walkthrough project and LarisLG [Barbershop](https://github.com/LarisaLG/barbershop) project:
+The idea for structure and the code of this project was from Code Institute's Codestar blog and Boutique Ado walkthrough projects:
   * The base.html code and styling is a modification of that of the codestar blog project.
   * Credit to LarisaLG for the idea of the menu, my bookings and book now html page with styling.
   * Credit to LarisaLG for Date picker field and minimum date validator.
@@ -827,23 +1204,17 @@ The idea for structure and the code of this project was from Code Institute's Co
 
 ### Content and Media
 
-  * credit to LarisaLG for the readme structure.
-  * Credit to LarisaLG on how to fork a GitHub repository or make a local clone.
+  * credit to [LarisaLG](https://github.com/LarisaLG/barbershop) for the readme structure.
+  * Credit to [LarisaLG](https://github.com/LarisaLG/barbershop) on how to fork a GitHub repository or make a local clone.
+  * Credit to [CodeWizard](https://github.com/CodeWizard-1/e-commerce) for AWS, S3 bucket, IAM, StripeAPi setup description.
 
-Credit to the following for the images of my homepage:
-1. [Abacha](https://apocomkitchen.co.uk/assets/front/img/product/sliders/615b138763c10.jpg)
-2. [Nkwobi](https://worldlytreat.com/wp-content/uploads/2023/03/Nkwobi-spicy-cow-leg-7.jpg)
-3. [Jollof](https://www.tastingtable.com/1000081/jollof-wars-the-dispute-surrounding-this-west-african-rice-dish/)
-4. [Fried rice](https://www.sweetnspicee.com/wp-content/uploads/2020/11/LEY_1301-scaled.jpg)
-5. [Yam porridge](https://guardian.ng/wp-content/uploads/2020/05/Vegetable-Yam-Porridge.-Photo-My-diaspora-kitchen.jpeg)
-6. [Egusi soup](https://www.forksandfingers.co.uk/wp-content/uploads/2019/06/Pounded-Yam.jpg.pagespeed.ce.GB0JCqfsKY.jpg)
-7. [Afang Soup](https://guardian.ng/wp-content/uploads/2018/09/Afang-soup-recipe-579x598.png)
-8. [Oha soup](https://www.vemscrunch.co.uk/wp-content/uploads/2022/08/Oha-Soup.jpg)
-9. [Banga soup](https://i.pinimg.com/736x/f3/d8/03/f3d803ce13eec61ea8a1a6bbd7d1fff3.jpg)
+Credit to the following for the images:
+
+ * All images where from [pexels.com](https://www.pexels.com/)
 
 Note: The use of these images were strictly for educational purposes only
 
 
 ### Acknowledgments
 
-I wish to acknowledge my mentor Martina Terlevic , Code Institute's 'Tutor me' and the CI slack community for all the support thus far. -->
+I wish to acknowledge my mentor Martina Terlevic, Mitko Bachvarov, Code Institute's 'Tutor me' and the CI slack community for all the support thus far.
