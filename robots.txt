@@ -1,0 +1,4 @@
+User-agent: *
+Disallowed: /accounts/
+Disallowed: /bag/
+Sitemap: https://fitness-palace-ci-project5-2dde85b1703c.herokuapp.com/sitemap.xml
