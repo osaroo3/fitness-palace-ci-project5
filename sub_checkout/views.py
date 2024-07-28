@@ -1,5 +1,6 @@
 from django.shortcuts import (
     render, redirect, reverse, get_object_or_404, HttpResponse)
+from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -29,6 +30,7 @@ def cache_sub_checkout_data(request):
         return HttpResponse(content=e, status=400)
 
 
+@login_required
 def view_sub_checkout(request, p_id):
     """ A view that renders the subcription checkout page """
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
