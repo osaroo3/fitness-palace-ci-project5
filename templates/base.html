@@ -17,7 +17,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="512x512" href="{% static 'images/favicons/dumbbell.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/favicons/women.png' %}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/training.png' %}">        
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'images/favicons/training.png' %}">
     {% endblock %}
 
     {% block extra_meta %}
@@ -99,6 +99,8 @@
                             <a href="{% url 'members_info' %}" class="dropdown-item">Members</a>
                             <a href="{% url 'contact_us' %}" class="dropdown-item">Contact Us</a>
                             <a href="{% url 'newsletter_subscription' %}" class="dropdown-item">Newsletter</a>
+                            <a href="https://www.termsfeed.com/live/5faae49f-9aa4-49c5-945e-b00ff268425f"
+                                target="_blank" class="dropdown-item">Privacy Policy</a>
                             <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
                             <a href="{% url 'contact_us' %}" class="dropdown-item">Contact Us</a>
@@ -163,20 +165,21 @@
 
     {% block page_header %}
     {% endblock %}
-    
+
     {% block content %}
     {% endblock %}
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 bg-black">
         <p class="m-0 text-center text-white">&copy; Arukwe Obo-Eba</p>
-        <p class="m-0 text-center text-white">Follow us: 
-            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square ms-3 link"></i></a>
+        <p class="m-0 text-center text-white">Follow us:
+            <a href="https://www.facebook.com/profile.php?id=61562947034566" target="_blank"><i
+                    class="fab fa-facebook-square ms-3 link"></i></a>
             <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-x-twitter ms-3 link"></i></a>
             <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square ms-3 link"></i></a>
             <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square ms-3 link"></i></a>
         </p>
-    </footer>    
+    </footer>
 
     {% block postloadjs %}
     <script type="text/javascript">
