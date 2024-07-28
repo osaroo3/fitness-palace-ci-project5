@@ -1,7 +1,7 @@
-Portfolio Project 5 -  Fitness Palace
+# Portfolio Project 5 -  Fitness Palace
 ![](static/images/readme-images/am-i-responsive.png)
 
-The deployed [Fitness Palace]() app.
+The deployed [Fitness Palace](https://fitness-palace-ci-project5-2dde85b1703c.herokuapp.com/) app.
 
 The [GitHub repository](https://github.com/osaroo3/fitness-palace-ci-project5) 
 
@@ -9,7 +9,21 @@ The [GitHub repository](https://github.com/osaroo3/fitness-palace-ci-project5)
 
 The goal of this project is to build a fitness subscription application with features such as user's ability to join a fitness community and purchase exercise plans and merchandise. Also, for site owner to be able to build an active community around the product based on subscription and individual payments model, sell exercise and nutrition plans, nutrition and exercise products.
 
-<!-- ## Marketing strategy -->
+## Marketing strategy
+
+The marketing startegy employed here are, SEO, social media marketing and email marketing.
+
+- Search engine optimization (SEO):
+
+How best to get our search engine rank high was the aim. Here, meta tag description and keywords where used as part of the optimisation goal, also sitemaps.xml and robots.txt files where used for the optimization process.
+
+- Social media marketing:
+
+Facebook business page was created as a cost effective way of gaining more reach using the power of social media to draw attention to our website and what we offer.
+
+- Email marketing:
+
+Email marketing was another way of reaching out to our subscribers in order to keep them with us and continually get their loyalty and patronage.
 
 # Table of content
 
@@ -68,8 +82,8 @@ As a returning user, I want:
 
 ### Agile tools
 
-GitHub Projects feature was used as a [Kanban board]() for the development of this project, which made is easy to track the progress made and goals attained.
-[User stories]() was used to structure the project into sections of tasks to be achieved, with the kenban board providing the platform. 
+GitHub Projects feature was used as a [Kanban board](https://github.com/users/osaroo3/projects/3/views/1) for the development of this project, which made is easy to track the progress made and goals attained.
+[User stories](https://github.com/osaroo3/fitness-palace-ci-project5/issues?q=is%3Aissue+is%3Aclosed) was used to structure the project into sections of tasks to be achieved, with the kenban board providing the platform. 
 
 
 ## Design and Site structure
@@ -506,11 +520,19 @@ This page takes some user information to complete subscription to chosen plan. I
 
 ### Footer
 
-![]()
+The footer was designed to link to Fitness Palace social media account. As of now, only the facebook account exists.
+
+![](static/images/readme-images/footer.png)
 
 ### Facebook page
 
-![]()
+The facebook page is a way of drawing more attention to Fitness Palace website in order to gain new customers.
+
+![](static/images/readme-images/fb-page.png)
+<br>
+![](static/images/readme-images/fb-page2.png)
+<br>
+![](static/images/readme-images/fb-page3.png)
 
 
 ### Responsive design
@@ -520,8 +542,12 @@ The site was designed to be responsive for both desktop and mobile use and has b
 
 ## Future features
 
-- 
-
+- Give admin CRUD ability to add, edit and delete plans from the front-end.
+- Make the members page UI/UX more appealing.
+- Add more nutritional products.
+- Add more functionality to the newsletter subscription.
+- Make the sites UI more captivating
+- Improve the footer
 
 
 ## Technologies Used
@@ -575,6 +601,7 @@ The site was designed to be responsive for both desktop and mobile use and has b
 #### Fixed Bugs
 
 - Some forms where not rendering. This was caused by spelling errors when calling them on the html pages.
+- 
 
 #### Unresolved Bugs
 
@@ -595,7 +622,6 @@ The error here was stray end divs tags. However, those end divs tags where neede
 The content does not maintain a row with three columns after more that two members have posted to the chat room. Also, a member is only recorded in the members column after posting on the room.
 
 
-<!--
 ### Manual Testing
 
 #### Device Testing
@@ -623,40 +649,64 @@ The browsers used for testing were as follows:
 Site testing was done on the Gitpod environment and Heroku.
 The available functionality and user experience is reflected in the table below.
 
-| Goals/actions  | As a guest | As a logged user  | Result | Comment |
+| Goals/actions  | As a guest | As a logged-in user  | Result | Comment |
 |--|:--:|:--:|:--:|--|
-| I can see the home page | &check; | &check; | Pass | Unauthorised users can't see My bookings page and Book now page |
-| I can see the Login page  | &check; |&check;  |  Pass| |
-| I can see the Register page | &check; |&check;  |  Pass| |
-| I can see the Logout page  | &cross; |&check;  |  Pass| Available only to an authorized users |
-| I can see the Menu page | &check; |&check;  |  Pass| |
-| I can click on My bookings and make bookings as a logged in user | &cross; | &check; | Pass | Available only to an authorized users|
-| I can modify bookings | &cross; |&check;  |  Pass| Available only to an authorized users | Available only to authorized users
-| I can delete bookings | &cross; |&check;  |  Pass| Available only to an authorized users | Available only to authorized users
-| I can click the Book now nav link and see the Book now page | &cross; |&check;  |  Pass| Available only to authorized users
-| I can fill fields in the Book now form | &cross; | &check;  | Pass |Available only to authorized users |
-| I can see the MY bookings page   | &cross; | &check;  | Pass | Available only to authorized users|
+ <strong>View and Navigation </strong>
+| I Can navigate the site intuitively | &check; | &check; | Pass | |
+| I can see the Login page  | &check; |&check;  |  Pass | |
+| I can see the Register page | &check; |&check;  |  Pass | | 
+| I can see the Logout page  | &cross; |&check;  |  Pass | 
+| I can view products | &check; | &check; | pass | |
+| I can select a product to view its details | &check; | &check; | pass | |
+| I can view a list of products | &check; | &check; | pass | |
+ <strong>Registration and User Accounts </strong>
+| I can register for an account easily | &check; | N/A | pass | |
+| I can login and logout | &cross; | &check; | pass |
+| I can recover my password if I forget | N/A | &check; | pass |  |
+| I can have a personal user profile | &cross; | &check; | pass | |
+| I can view a list of products | &check; | &check; | pass |  |
+ <strong>Sorting and Searching </strong>
+| I can search products by price, rating or category | &check; | &check; | pass | |
+| I can see my searches and number of results| &check; | &check; | pass | |
+| I can sort through products easily | &check; | &check; | pass | |
+ <strong>Purchasing/subscription and Checkout </strong>
+ | I can select size and quantity of product when purchasing | &check; | &check; | pass | |
+ | I can add products to bag and purchase item | &check; | &check; | pass | |
+ | I can view my bag to see items I am purchasing | &check; | &check; | pass |  |
+ | I can adjust quantity of products in my bag | &check; | &check; | pass | |
+ | I can receive notification/email confirmation after purchase | &check; | &check; | pass | |
+ | I can view various subscrition plans, their description and prices | &cross; | &check; | pass | |
+ | I can subscribe to available plans | &cross; | &check; | pass | |
+ | I can receive email notification about plan subscribed to | &cross; | &check; | pass | |
+ | I can checkout with ease and feel safe about my details| &check; | &check; | pass |  |
+  <strong>Community </strong>
+| I can be a member of the community once I subscribe to a plan | &cross; | &check; | pass | |
+| I can review a product| &cross; | &check; | pass | |
+| I can post and view posts on the members group| &cross; | &check; | pass | |
+| My user profile contains information about my purchases and maps to my plan(s)| &cross; | &check; | pass | |   
+<strong>Admin and Facility Management </strong> 
+| Add a product| &cross; | &cross; | pass | Only a logged in user with admin credentials can |
+| Edit/update a product| &cross; | &cross; | pass | Only a logged in user with admin credentials can |
+| Delete a product| &cross; | &cross; | pass | Only a logged in user with admin credentials can |
 
 <br/>
--->
 
-## Validation
 
-### HTML Validation:
+### Validation
+
+#### HTML Validation:
 
 The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website. There where errors noticed on the members page and bag page. The errors have been discussed on the unfixed bug section. 
 
-![html validation]()
-
 ---
-### CSS Validation:
+#### CSS Validation:
 
 The website CSS styling was validated using [W3C Jigsaw CSS Validation Service](https://jigsaw.w3.org/css-validator/). 
 
 ![css validation](static/images/readme-images/css-check.png)
 
 ---
-### JavaScript Validation:
+#### JavaScript Validation:
 
 The website JavaScript code was validated using [JSHint Validation](https://jshint.com/). There where no errors, just warnings about template literals available only on ES6.
 
@@ -664,7 +714,11 @@ The website JavaScript code was validated using [JSHint Validation](https://jshi
 ---
 <br/>
 
-### Python Validation (PEP8)
+#### Lighthouse
+
+![](static/images/readme-images/lighthouse.png)
+
+#### Python Validation (PEP8)
 
 All Python code was checked manually with the aid of  [CI Python Linter](https://pep8ci.herokuapp.com/). Errors observed have all been fixed. 
 
@@ -957,11 +1011,8 @@ All Python code was checked manually with the aid of  [CI Python Linter](https:/
 ![subscribe models](static/images/readme-images/subscribe-models-py.png)
 </details>
 
-
-
-
 ---
-
+##  Deployment
 
 ### Database
 
@@ -1143,7 +1194,7 @@ Once you've created a Gmail (Google) account and logged-in, follow these series 
 	- `EMAIL_HOST_USER` = user's own personal Gmail email address
 
 
-##  Deployment
+### Heroku
 
 The development of this project was done with Gitpod, stored on GitHub and deployed using Heroku.
 1. Visit [Heroku](https://heroku.com/)
@@ -1192,19 +1243,18 @@ For more information follow this [link](https://docs.github.com/en/repositories/
 ### Code
 
 The idea for structure and the code of this project was from Code Institute's Codestar blog and Boutique Ado walkthrough projects:
-  * The base.html code and styling is a modification of that of the codestar blog project.
-  * Credit to LarisaLG for the idea of the menu, my bookings and book now html page with styling.
-  * Credit to LarisaLG for Date picker field and minimum date validator.
-  * The javaScript code for deleting a booking was from codestar blog project.
-  * The idea for my models.py was from Codestar blog and barbarshop by LarisaLG.
-  * Credit to [W3schools](https://www.w3schools.com/django/django_404.php) for the idea to handle double booking server error.
+  * The base.html code and styling is a modification of that of Boutique Ado walkthrough project.
+  * Credit to [LarisaLG](https://github.com/LarisaLG/barbershop) for the idea of the my plans page with styling.
+  * The javaScript code functionlity are from Boutique Ado project.
+  * The idea for my models.py was from code institutes codestar blog and Boutique Ado walkthrough project
+  * Credit to [W3schools](https://www.w3schools.com/) on horizontal lines styling to grow with the page length.
   * Credit to [Django documentation](https://docs.djangoproject.com/en/5.0/) for "Everything you need to know about Django".
 
 
 
 ### Content and Media
 
-  * credit to [LarisaLG](https://github.com/LarisaLG/barbershop) for the readme structure.
+  * credit to [LarisaLG](https://github.com/LarisaLG/barbershop) and [osaroo3](https://github.com/osaroo3/django_restaurant_ci_project4) for the readme structure.
   * Credit to [LarisaLG](https://github.com/LarisaLG/barbershop) on how to fork a GitHub repository or make a local clone.
   * Credit to [CodeWizard](https://github.com/CodeWizard-1/e-commerce) for AWS, S3 bucket, IAM, StripeAPi setup description.
 
