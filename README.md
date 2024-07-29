@@ -7,7 +7,7 @@ The [GitHub repository](https://github.com/osaroo3/fitness-palace-ci-project5)
 
 ## Project goals
 
-The goal of this project is to build a fitness subscription application with features such as user's ability to join a fitness community and purchase exercise plans and merchandise. Also, for site owner to be able to build an active community around the product based on subscription and individual payments model, sell exercise and nutrition plans, nutrition and exercise products.
+The goal of this project is to build a fitness subscription application with features such as user's ability to join a fitness community and purchase exercise plans and merchandise. Also, for site owner to be able to build an active community around the product, based on subscription and individual payments model. Sell exercise and nutrition plans, nutrition and exercise products.
 
 ## Marketing strategy
 
@@ -68,7 +68,8 @@ As a returning user, I want:
 * to access my user account by signing in.
 * to make and view my subscriptions. 
 * to be able to sign out of my account as a safety measure.
-* view my profile and orders
+* view my profile and orders.
+* to view a list of products and make purchases.
 
 
 #### Site Administrator/ Facility management goals
@@ -88,8 +89,7 @@ GitHub Projects feature was used as a [Kanban board](https://github.com/users/os
 
 ## Design and Site structure
 
-The design and structure of the projects is a modification of the code Institutes Boutique Ado project to meet the required features of Fitness Subscription Application project. The fonts, text, color et. al. have been chosen for simplicity and effectiveness in gaining site visitor attention.
-
+The design and structure of the projects is a modification of the code Institutes Boutique Ado project to meet the required features of Fitness Subscription Application project. The fonts, text, color et. al. have been chosen for simplicity and effectiveness in gaining site users attention.
 
 <details>
 <summary>Fitness Palace look at first glance</summary>
@@ -97,7 +97,7 @@ The design and structure of the projects is a modification of the code Institute
 ![Home page](static/images/readme-images/home-page.png)
 
 </details>
-<br />
+
 
 ### Functional Structure
 
@@ -105,7 +105,7 @@ The design and structure of the projects is a modification of the code Institute
 
 **All products:** The all products has a drop down functionality that enables users to access products more effectively utilising the filter functionality enbedded in the dropdown list options. 
 
-**Clothing:** This has a filter capabilities to render only clothing products.
+**Fitness:** This maps to a dropdown link with filter feature to fitness products.
 
 **Nutrition:** This maps to a dropdown link with filter feature to nutrition products.
 
@@ -118,7 +118,7 @@ The design and structure of the projects is a modification of the code Institute
  
 ### Wireframes
 
-The wireframes used are shown below although modified in the project work:
+The wireframes used are shown below:
 
 **Models**
 
@@ -509,7 +509,7 @@ This page is where certain details is required of the user to complete the purch
 <br>
 ![](static/images/readme-images/checkout-wh-page.png)
 
-### Plan checout page
+### Plan checkout page
 
 This page takes some user information to complete subscription to chosen plan. If successful, the webhook functionality is triggered to email the user about their plan subscription.
 
@@ -534,6 +534,10 @@ The facebook page is a way of drawing more attention to Fitness Palace website i
 <br>
 ![](static/images/readme-images/fb-page3.png)
 
+### Privacy policy
+
+![](static/images/readme-images/privacy-policy.png)
+
 
 ### Responsive design
 
@@ -547,7 +551,7 @@ The site was designed to be responsive for both desktop and mobile use and has b
 - Add more nutritional products.
 - Add more functionality to the newsletter subscription.
 - Make the sites UI more captivating
-- Improve the footer
+- Improve the footer UI
 
 
 ## Technologies Used
@@ -601,26 +605,35 @@ The site was designed to be responsive for both desktop and mobile use and has b
 #### Fixed Bugs
 
 - Some forms where not rendering. This was caused by spelling errors when calling them on the html pages.
-- 
+
+- Filtering the products by category "Fitness product" did not work. I was able to fix it when I noticed the href link was 
+  "{% url 'products' %}?category=fitness,product" instead of "{% url 'products' %}?category=fitness_product"
+
+- members page
+
+The names of members of the group appears on medium screen. This should not be so, it should only appear on large screen sizes. It was fixed using bootstrap "d-none d-md-block" styling.
+
+![](static/images/readme-images/members-page-fix.png)
 
 #### Unresolved Bugs
 
 - bag page
-<br>
+
 The error here showed 'duplicated id'. The reason for this error was because some codes of bag.html page was removed and used to create additional 5 html files, which where then called in the bag page using {% include %} tag. Because of this, quantity form was called twice on the bag page thereby causing the W3C validator to pick it as duplicate id error.
 
 ![bag page validation](static/images/readme-images/bag-page-error.png)
 
 - members page
-<br>
+
 The error here was stray end divs tags. However, those end divs tags where needed closing tags.
 
 ![members page validation](static/images/readme-images/members-page-validation.png)
 
-- members page
-<br>
-The content does not maintain a row with three columns after more that two members have posted to the chat room. Also, a member is only recorded in the members column after posting on the room.
+- Management page
 
+The errors here are duplicate id error and p tag not allowed to be a child of strong error. The form was rendered by crispsy, I could not work my way around it to fix it.
+
+-![](static/images/readme-images/management-validation.png)
 
 ### Manual Testing
 
@@ -696,7 +709,7 @@ The available functionality and user experience is reflected in the table below.
 
 #### HTML Validation:
 
-The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website. There where errors noticed on the members page and bag page. The errors have been discussed on the unfixed bug section. 
+The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website. There where errors noticed on the members, bag and management page. The errors have been discussed on the unfixed bug section. 
 
 ---
 #### CSS Validation:
