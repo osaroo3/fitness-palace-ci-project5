@@ -31,6 +31,7 @@ Email marketing was another way of reaching out to our subscribers in order to k
   - [**User Stories**](#user-stories)
 - [**Design and Site Structure**](#design-structure)
   - [**Functional Structure**](#functional-structure)
+  - [**Database schema**](#database-schema)
   - [**Wireframes**](#wireframes)
 - [**Features**](#features)
   - [**Responsive Design**](#responsive-design)
@@ -115,7 +116,11 @@ The design and structure of the projects is a modification of the code Institute
 
 **Logout page:** Only registered users have the ability to logout..
 
- 
+### Database schema
+
+The database diagram was drawn using [drawsql](https://drawsql.app/teams/osas-2/diagrams/my-models-erd) with connections shown.
+![](static/images/readme-images/erd.png)
+
 ### Wireframes
 
 The wireframes used are shown below:
@@ -151,9 +156,9 @@ The wireframes used are shown below:
 </details>
 
 <details>
-<summary>Order model</summary>
+<summary>Subcheckout order model</summary>
 
-![Subcheckout order model](static/images/readme-images/subcheckout-order-model.png)
+![Order model](static/images/readme-images/subcheckout-order-model.png)
 
 </details>
 
@@ -179,9 +184,9 @@ The wireframes used are shown below:
 </details>
 
 <details>
-<summary>Checkout model</summary>
+<summary>Checkout order model</summary>
 
-![Checkout model](static/images/readme-images/checkout-model.png)
+![Order model](static/images/readme-images/check-order-model.png)
 
 </details>
 
